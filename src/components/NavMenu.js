@@ -53,10 +53,12 @@ ul{
 }
 // Media query includes CSS properties only if a certain condition is true.
 @media only screen and (max-width: 768px) {
+  .hide-item {
+    display: none;
+  }
   .mobile-menu-icon {
     display: block;
   }
-
   .nav-items {
     transition: 0.3 ease transform;
     background-color: var(--deep-dark);
@@ -98,7 +100,8 @@ export default function NavMenu() {
       <div class='mobile-menu-icon'>
         <MdMenu />
       </div>
-      <ul className="nav-items">
+      <ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
+      {/* if false show nav items and hide item, if true just return nav tims */}
         <div
         className='close-nav-icon'
         onClick={() => SetShowNav(!showNav)}
