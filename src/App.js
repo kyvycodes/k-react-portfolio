@@ -5,10 +5,13 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
+import HeroSection from './components/HeroSection';
+
 
 export default function App() {
   return (
     <>
+    <HeroSection/>
     <Router>
       <NavMenu/>
       <Switch>
