@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdMenu, MdClose} from 'react-icons/md'
 
-// variable colors from globalStyles
+// variable colors currently from globalStyles
 const NavMenuStyle = styled.div`
 background-color: var(--dark-bg);
 position: fixed;
@@ -56,11 +56,8 @@ ul{
   .mobile-menu-icon {
     display: block;
   }
-  .close-nav-icon {
-    display: block;
-  }
-  .nav-items {
 
+  .nav-items {
     transition: 0.3 ease transform;
     background-color: var(--deep-dark);
     padding: 2rem;
@@ -69,21 +66,47 @@ ul{
     border-radius: 12px;
     position: absolute;
     right: 1rem;
-    //creates css variable
-    --top: 1rem;
-    top: var(--top);
+
+    --top: 1rem; //creates css variable
+    top: var(--top); //using css variable
+
+    //nested icon
+    .close-nav-icon {
+      display: block;
+      width: 3rem;
+      margin: 0 0 0 auto;
+      cursor: pointer;
+      //removes pointer event for nested div items - svg, path etc
+      * {
+        pointer-events: none;
+      }
+    }
+    li{
+      display: block;
+      margin-bottom: 1rem;
+    }
   }
 }
 `
 
 export default function NavMenu() {
+  // const [state, setstate function] = useState(initialState)
+  //adds functionality to
+  const [showNav, SetShowNav] = useState(false)
   return(
     <NavMenuStyle>
       <div class='mobile-menu-icon'>
         <MdMenu />
       </div>
       <ul className="nav-items">
-        <div className='close-nav-icon'>
+        <div
+        className='close-nav-icon'
+        onClick={() => SetShowNav(!showNav)}
+        role="button"
+        //selects the icon with tab and then allows you to press any key to run
+        onKeyDown={() => SetShowNav(!showNav)}
+        tabIndex={0}
+        >
           <MdClose/>
         </div>
         <li>
