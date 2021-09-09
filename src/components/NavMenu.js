@@ -15,7 +15,7 @@ export default function NavMenu() {
           <NavLink to="/contact">Contact</NavLink>
           </li>
           <li>
-          <NavLink to="/passions">Passions</NavLink>
+          <NavLink to="/passions">About</NavLink>
           </li>
         {/* <li>Projects</li> */}
         {/* <li>Contact</li>
