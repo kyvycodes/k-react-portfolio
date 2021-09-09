@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
+import { MdMenu, MdClose} from 'react-icons/md'
 
 // variable colors from globalStyles
 const NavMenuStyle = styled.div`
@@ -36,12 +37,55 @@ ul{
     color: #FFC0CB;
   }
 }
+//mobile options
+.mobile-menu-icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  width: 4rem;
+  cursor: pointer;
+  // only want to see this on a mobile device
+  display: none;
+  outline: none;
+}
+.close-nav-icon {
+  display: none;
+}
+// Media query includes CSS properties only if a certain condition is true.
+@media only screen and (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+  .close-nav-icon {
+    display: block;
+  }
+  .nav-items {
+
+    transition: 0.3 ease transform;
+    background-color: var(--deep-dark);
+    padding: 2rem;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 12px;
+    position: absolute;
+    right: 1rem;
+    //creates css variable
+    --top: 1rem;
+    top: var(--top);
+  }
+}
 `
 
 export default function NavMenu() {
   return(
     <NavMenuStyle>
-      <ul>
+      <div class='mobile-menu-icon'>
+        <MdMenu />
+      </div>
+      <ul className="nav-items">
+        <div className='close-nav-icon'>
+          <MdClose/>
+        </div>
         <li>
           <NavLink to="/"exact>Home</NavLink>
           </li>
