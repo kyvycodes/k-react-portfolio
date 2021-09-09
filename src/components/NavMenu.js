@@ -47,14 +47,18 @@ ul{
   // only want to see this on a mobile device
   display: none;
   outline: none;
+  * {
+  pointer-events: none;
+}
 }
 .close-nav-icon {
   display: none;
 }
 // Media query includes CSS properties only if a certain condition is true.
 @media only screen and (max-width: 768px) {
+  padding: 0;
   .hide-item {
-    display: none;
+    transform: translateY(calc(-100% - var(--top)))
   }
   .mobile-menu-icon {
     display: block;
@@ -97,7 +101,11 @@ export default function NavMenu() {
   const [showNav, SetShowNav] = useState(false)
   return(
     <NavMenuStyle>
-      <div class='mobile-menu-icon'>
+      <div className='mobile-menu-icon'
+            onClick={() => SetShowNav(!showNav)}
+            role="button"
+            onKeyDown={() => SetShowNav(!showNav)}
+            tabIndex={0}>
         <MdMenu />
       </div>
       <ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
@@ -113,20 +121,40 @@ export default function NavMenu() {
           <MdClose/>
         </div>
         <li>
-          <NavLink to="/"exact>Home</NavLink>
+          <NavLink
+          //to remove navbar after linking to the path
+          to="/"exact
+          onClick={() => SetShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => SetShowNav(!showNav)}
+          tabIndex={0}
+          >Home</NavLink>
           </li>
           <li>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink
+          to="/projects"
+          onClick={() => SetShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => SetShowNav(!showNav)}
+          tabIndex={0}
+          >Projects</NavLink>
           </li>
           <li>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink
+          to="/contact"
+          onClick={() => SetShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => SetShowNav(!showNav)}
+          tabIndex={0}>Contact</NavLink>
           </li>
           <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink
+          to="/about"
+          onClick={() => SetShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => SetShowNav(!showNav)}
+          tabIndex={0}>About</NavLink>
           </li>
-        {/* <li>Projects</li> */}
-        {/* <li>Contact</li>
-        <li>Passions</li> */}
       </ul>
     </NavMenuStyle>
   )
