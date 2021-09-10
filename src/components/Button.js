@@ -32,12 +32,27 @@ margin-top: 2rem;
 }
 `
 
-export default function Button(props) {
-  console.log('btn', props)
+// export default function Button(props) {
+//   console.log('btn', props)
+//   return (
+//     <ButtonStyle outline={props.outline}>
+//       <BrowserRouter>
+//         <Link className='button' to={props.btnLink}>{props.btnText}</Link>
+//       </BrowserRouter>
+//     </ButtonStyle>
+//   )
+// }
+
+
+export default function Button({
+  btnLink = 'testtt', //default values
+  outline = true,
+  btnText = 'Test' }) {
+  console.log('btn', btnLink, outline, btnText )
   return (
-    <ButtonStyle outline={props.outline}>
+    <ButtonStyle outline={outline}>
       <BrowserRouter>
-        <Link className='button' to={props.btnLink}>{props.btnText}</Link>
+        <Link className='button' to={btnLink}>{btnText}</Link>
       </BrowserRouter>
     </ButtonStyle>
   )
