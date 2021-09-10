@@ -20,8 +20,8 @@ const HeroStyles = styled.div`
   //so that child can be absolute
 }
 .hero_heading {
-  font-size: 2rem;
-  margin-bottom: -4rem;
+  font-size: 1.5rem;
+  margin-bottom: -5.5rem;
   position: relative;
   span {
     display: inline-block;
@@ -33,13 +33,13 @@ const HeroStyles = styled.div`
     // font-family:
     color: var(--white)
   }
-  .door_img {
-    max-width: 900px;
-    width: 100%;
-    height: 600px;
-    margin: 0 auto;
-    border: 2px solid var(--white)
-  }
+}
+.door_img {
+  max-width: 900px;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  border: 2px solid var(--gray-1);
 }
 `
 
@@ -50,12 +50,12 @@ export default function HeroSection() {
       <div className='hero'>
       <div className='container'>
         <h1 className='hero_heading'>
-         <span>Hello I'm</span>
-          <span className="hero_name">Kay</span>
+         <span>Hello I'm </span>
+          <span className="hero_name">Kay Hardeman</span>
           </h1>
           <div className="door_img">
             {/* <img src={DoorImg} alt=''/> */}
-            <img src={ Hero } />
+            <img src={ DoorImg } />
           </div>
           <div className='hero_info'>
             <ParagraphText> I am a child of PText component - Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies. Gingerbread sugar plum dessert marzipan bear claw jelly beans cake brownie. Donut caramels donut donut tart carrot cake powder carrot cake bonbon.</ParagraphText>

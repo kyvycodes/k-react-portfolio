@@ -30,7 +30,7 @@ ul{
     font-family: 'RobotoMono Regular';
     padding: 1rem 2rem;
     font-size: 2rem;
-    color: var(--gary-1);
+    color: var(--gray-1);
     outline: none;
   }
   .active {
@@ -51,7 +51,7 @@ ul{
   pointer-events: none;
 }
 }
-.close-nav-icon {
+.nav-items .close-nav-icon {
   display: none;
 }
 // Media query includes CSS properties only if a certain condition is true.
@@ -64,6 +64,7 @@ ul{
     display: block;
   }
   .nav-items {
+    --top: 1rem; //creates css variable
     transition: 0.3 ease transform;
     background-color: var(--deep-dark);
     padding: 2rem;
@@ -72,8 +73,6 @@ ul{
     border-radius: 12px;
     position: absolute;
     right: 1rem;
-
-    --top: 1rem; //creates css variable
     top: var(--top); //using css variable
 
     //nested icon
@@ -94,6 +93,7 @@ ul{
   }
 }
 `
+
 
 export default function NavMenu() {
   // const [state, setstate function] = useState(initialState)
