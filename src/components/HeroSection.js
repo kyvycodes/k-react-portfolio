@@ -4,17 +4,58 @@ import Button from './Button'
 import ParagraphText from './ParagraphText'
 import InterestsArrow from '../assets/images/interests-arrow.svg'
 import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg'
+import styled from 'styled-components'
+import Hero from '../assets/images/hero.png'
+
+const HeroStyles = styled.div`
+.hero {
+  height: 100vh;
+  min-height: 1000px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  //so that child can be absolute
+}
+.hero_heading {
+  font-size: 2rem;
+  margin-bottom: -4rem;
+  position: relative;
+  span {
+    display: inline-block;
+    width: 100%;
+  }
+  .hero_name {
+    font-size: 6rem;
+    //TODO change font
+    // font-family:
+    color: var(--white)
+  }
+  .door_img {
+    max-width: 900px;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid var(--white)
+  }
+}
+`
+
 
 export default function HeroSection() {
   return (
-    <div>
+    <HeroStyles>
+      <div className='hero'>
       <div className='container'>
         <h1 className='hero_heading'>
-        <span>Hello I'm</span>
-          <span>Kay</span>
+         <span>Hello I'm</span>
+          <span className="hero_name">Kay</span>
           </h1>
           <div className="door_img">
-            <img src={DoorImg} alt=''/>
+            {/* <img src={DoorImg} alt=''/> */}
+            <img src={ Hero } />
           </div>
           <div className='hero_info'>
             <ParagraphText> I am a child of PText component - Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies. Gingerbread sugar plum dessert marzipan bear claw jelly beans cake brownie. Donut caramels donut donut tart carrot cake powder carrot cake bonbon.</ParagraphText>
@@ -24,7 +65,7 @@ export default function HeroSection() {
       <div className='hero_interests'>
           <div className='hero_interests_indicator'>
             <p>customize me</p>
-            <img src={InterestsArrow} alt=''/>
+            {/* <img src={InterestsArrow} alt=''/> */}
             <div className='interests_text'>
               <ul>
                 <li>
@@ -42,9 +83,10 @@ export default function HeroSection() {
       </div>
       <div className="hero_scrolldown">
       <p>scroll</p>
-      <img src={ScrollDownArrow} alt=''/>
+      {/* <img src={ScrollDownArrow} alt=''/> */}
       </div>
     </div>
   </div>
+  </HeroStyles>
   )
 }
