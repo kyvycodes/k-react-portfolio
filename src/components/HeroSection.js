@@ -105,6 +105,64 @@ const HeroStyles = styled.div`
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .hero_section {
+    min-height: 750px;
+  }
+  .hero_heading {
+    font-size: 1.4rem;
+    margin-bottom: -2.5rem;
+    .hero_name {
+      // font-size: 5.5rem;
+      font-size: 4.5rem;
+    }
+  }
+  .door_img {
+    height: 420px;
+  }
+  //TODO refactor css for media
+  .hero_info {
+    margin-top: 3rem;
+    // margin-bottom: -5rem;
+  }
+  //left side
+  .hero_interests {
+    left: 0px;
+    bottom: -15%;
+    width: 20px;
+    .hero_interests_indicator {
+      width: 20px;
+      gap: 5rem;
+      p {
+        font-size: 1.1rem;
+        padding-right: 10px;
+      }
+      img {
+        max-height: 42px;
+      }
+    }
+  .hero_interests_text {
+    ul {
+      li{
+        a {
+          font: 1.2rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+  //right side
+  .hero_scroll_down {
+    width: 20px;
+    right: 0;
+    gap: 1rem;
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
 `
 
 
@@ -127,7 +185,7 @@ export default function HeroSection() {
           </div>
       <div className='hero_interests'>
           <div className='hero_interests_indicator'>
-            <p>customize me</p>
+            <p>follow</p>
             <img src={Interests} alt=''/>
             </div>
             <div className='hero_interests_text'>
