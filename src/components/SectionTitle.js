@@ -25,11 +25,14 @@ const SectionTitleStyle = styled.div`
 
 `;
 
-export default function SectionTitle() {
+export default function SectionTitle({
+  subtitle = 'This is a subtitle',
+  title = 'This is the Title'
+}) {
   return (
     <SectionTitleStyle>
-      <p> This is a subtitle</p>
-      <h2>This is the Title</h2>
+      <p>{subtitle} </p>
+      <h2>{title} </h2>
     </SectionTitleStyle>
   )
 }

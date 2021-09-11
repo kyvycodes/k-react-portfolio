@@ -20,7 +20,7 @@ margin-top: 2rem;
     props.outline ? 'var(--gray-1)' : 'purple'
     };
    background-color: ${(props) =>
-    props.outline ? 'yellow' : 'var(--gray-1)'
+    props.outline ? 'transparent' : 'var(--gray-1)'
     };
   opacity: 0.5;;
   border: 2px solid var(--gray-1)
