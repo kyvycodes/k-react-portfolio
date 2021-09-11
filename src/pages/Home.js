@@ -1,10 +1,13 @@
 import React from 'react'
+import HeroSection from '../components/HeroSection';
+import AboutSection from '../components/AboutSection';
 
 //functional component
 export default function Home() {
   return (
     <div>
-      {/* <h1>This is home</h1> */}
+      <HeroSection />
+      <AboutSection />
     </div>
   )
 }
