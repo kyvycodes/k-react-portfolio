@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
+import ProjectSection from '../components/ProjectSection';
 
 //functional component
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <div>
       <HeroSection />
       <AboutSection />
+      <ProjectSection />
     </div>
   )
 }
