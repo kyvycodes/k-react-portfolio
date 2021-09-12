@@ -17,7 +17,7 @@ margin-top: 2rem;
   display: inline-block;
   //TODO come back look up correct () syntax for arrow functions
   color: ${props =>
-    props.outline ? 'var(--gray-1)' : 'purple'
+    props.outline ? 'var(--gray-1)' : '#250307'
     };
    background-color: ${(props) =>
     props.outline ? 'transparent' : 'var(--gray-1)'
@@ -50,7 +50,9 @@ export default function Button({
   btnText = 'Test' }) {
   console.log('btn', btnLink, outline, btnText )
   return (
-    <ButtonStyle outline={outline}>
+    <ButtonStyle
+    className='button_wrapper'
+    outline={outline}>
       <BrowserRouter>
         <Link className='button' to={btnLink}>{btnText}</Link>
       </BrowserRouter>

@@ -42,7 +42,46 @@ const AboutSectionStyle = styled.div`
    margin-top: 1rem;
    gap: 2rem;
  }
+//similar to ipad size
+ @media only screen and (max-width: 950px){
+  .about_section_left {
+    flex: 4;
+  }
+  .about_section_right: {
+    flex: 3;
+  }
+ }
 
+ @media only screen and (max-width: 768px){
+   .container {
+     flex-direction: column;
+     text-align: center;
+   }
+   .about_section_right,
+   .about_section_left {
+     width: 100%;
+   }
+   .about_section_right{
+     margin-top: 3rem;
+   }
+   .section_title {
+     text-align: center;
+   }
+   .paragraph {
+     margin: 0 auto;
+     margin-top: 2rem;
+   }
+   .about_section_buttons {
+     flex-direction: column;
+     gap: 0;
+    //  TODO -design decision, remove wrapper ?
+     .button_wrapper,
+     a {
+       width: 100%;
+       text-align: center;
+     }
+   }
+ }
 `
 
 
@@ -51,7 +90,6 @@ export default function AboutSection() {
     <AboutSectionStyle>
       <div className='container'>
         <div className="about_section_left">
-          {/* Section title and sub title uses a component to keep the code dry */}
           <SectionTitle
           subtitle="Let me reintroduce myself my name is Hov"
           title="About me !!!"
@@ -62,7 +100,7 @@ export default function AboutSection() {
           <div className="about_section_buttons">
             <Button
             btnLink='/projects'
-            btnText='MyWork💖'
+            btnText='My Work💖'
             outline={false}/>
             <Button
             btnLink='/about'
