@@ -18,7 +18,7 @@ export default function ParagraphText(props) {
   console.log(props)
   console.log(props.children)
   return (
-    <ParagraphStyle>
+    <ParagraphStyle className="paragraph">
       <p>{props.children}</p>
     </ParagraphStyle>
   )

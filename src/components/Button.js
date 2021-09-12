@@ -11,7 +11,7 @@ import styled from 'styled-components'
 const ButtonStyle = styled.div`
 margin-top: 2rem;
 .button {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: .7em 2em;
   border-radius: 8px;
   display: inline-block;

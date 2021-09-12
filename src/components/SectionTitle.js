@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionTitleStyle = styled.div`
-  text-align: center;
+  text-align: center; //default styling
   p {
     font-family: "RobotoMono Regular";
     font-size: 2rem;
@@ -30,7 +30,7 @@ export default function SectionTitle({
   title = 'This is the Title'
 }) {
   return (
-    <SectionTitleStyle>
+    <SectionTitleStyle className='section_title'>
       <p>{subtitle} </p>
       <h2>{title} </h2>
     </SectionTitleStyle>
