@@ -2,6 +2,7 @@ import React from 'react'
 import SectionTitle from './SectionTitle'
 import { Swiper } from "swiper/react";
 import projects from '../assets/data/projects'
+import IndividualProject from './IndividualProject';
 
 export default function ProjectSection() {
   return (
@@ -12,7 +13,7 @@ export default function ProjectSection() {
           <Swiper>
             {projects.map((project, index) => {
               if(index >= 3) return;
-              return
+              return <IndividualProject/>
             })}
           </Swiper>
         </div>
