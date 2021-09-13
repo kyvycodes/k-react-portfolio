@@ -88,12 +88,17 @@ export default function ProjectSection() {
             }
           }
           >
+            {/* maps imported projects array of objects */}
             {projects.map((project, index) => {
               if(index >= 3) return;
               return (
                 // unique key from project data id
                 <SwiperSlide key={project.id}>
-                  <IndividualProject/>
+                  <IndividualProject
+                  title={project.name}
+                  img={project.img}
+                  description={project.desc}
+                  />
                 </SwiperSlide>
               )
             })}

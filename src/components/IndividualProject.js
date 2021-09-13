@@ -37,19 +37,23 @@ const IndividualProjectStyle = styled.div`
 
 `
 
-export default function IndividualProject() {
+export default function IndividualProject({
+  img = ProjectImg,
+  title = "Project Name",
+  description = "Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies."
+}) {
   return (
     <IndividualProjectStyle>
       {/* links to component but can also link to project */}
       <Link to='/projects' className='individual_project_img'>
-      <img src={ ProjectImg } alt/>
+      <img src={ img } alt/>
       </Link>
       <div className="individual_project_info">
         <Link to='/projects'>
-          <h3 className='individual_project_title'>Project 1
+          <h3 className='individual_project_title'>{title}
           </h3>
         </Link>
-        <p className='individual_project_description'>Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies.</p>
+        <p className='individual_project_description'>{description}</p>
       </div>
     </IndividualProjectStyle>
   )
