@@ -49,7 +49,16 @@ border-radius: 8px;
 .swiper-button-next::after {
   font-size: 2rem;
 }
-.
+
+@media screen only and (max-width: 768px){
+  .project_all_items {
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;     //centers
+    margin-top: 7rem;
+    gap: 5rem;
+  }
+}
 `
 
 export default function ProjectSection() {
@@ -60,7 +69,7 @@ export default function ProjectSection() {
         <div className='project_all_items'>
           <Swiper
           spaceBetween={30}
-          slidesPerView={2}
+          slidesPerView={1}
           navigation
           breakpoints={
             {
