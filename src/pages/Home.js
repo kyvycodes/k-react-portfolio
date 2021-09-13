@@ -3,6 +3,7 @@ import HeroSection from '../components/HeroSection';
 import AboutSection from '../components/AboutSection';
 import ProjectSection from '../components/ProjectSection';
 import TestimonialsSection from '../components/TestimonialsSection';
+import ContactBanner from '../components/ContactBanner';
 
 //functional component
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <ProjectSection />
       <TestimonialsSection />
+      <ContactBanner/>
     </div>
   )
 }

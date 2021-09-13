@@ -82,7 +82,7 @@ export default function TestimonialsSection() {
   // useState(0) will be the first item in the array of testimonial data
   const [activeIndex, setActiveIndex] = useState(0)
   const activeSlide = testimonials[activeIndex]
-  console.log('active', activeSlide)
+  // console.log('active', activeSlide)
 
   //handles previous and next item changes
   function handlePrevious(){
