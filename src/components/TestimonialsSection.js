@@ -58,6 +58,21 @@ text-align: center;
     cursor: pointer;
   }
 }
+//inner transition
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+
+//inner transition
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
 `
 
 export default function TestimonialsSection() {
@@ -79,6 +94,7 @@ export default function TestimonialsSection() {
   function handleNext(){
     //if it is the last item
     if(activeIndex >=  testimonials.length-1){
+      //reset to the first
       setActiveIndex(0)
     } else {
       setActiveIndex((currentIndex) => currentIndex + 1)
@@ -92,8 +108,15 @@ export default function TestimonialsSection() {
       subtitle='This is a test'
       title='this is testimonials'/>
       <div className='testimonial_wrapper'>
+      {/* http://reactcommunity.org/react-transition-group/switch-transition */}
       <SwitchTransition>
-        <CSSTransition>
+      {/* http://reactcommunity.org/react-transition-group/css-transition */}
+        <CSSTransition
+        //decides when transition happens
+        key={activeSlide.id}
+        timeout={300}
+        classNames='fade'
+        >
           <div className='testimonial_info'>
             <div className='testimonial_description'>
                 <ParagraphText>
