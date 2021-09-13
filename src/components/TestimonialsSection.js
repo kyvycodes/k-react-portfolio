@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import SectionTitle from './SectionTitle'
 import ParagraphText from './ParagraphText'
 import styled from 'styled-components'
 import { MdArrowBack, MdArrowForward } from 'react-icons/md'
 import { IoArrowForwardCircle } from 'react-icons/io5'
+import testimonials from '../assets/data/testimonials'
 
 
 const TestimonialsSectionStyle = styled.div`
@@ -62,6 +63,11 @@ text-align: center;
 
 
 export default function TestimonialsSection() {
+  //mange index with useState
+  // useState(0) will be the first item in the array of testimonial data
+  const [activeIndex, setActiveIndex] = useState(0)
+  const activeSlide = testimonials[activeIndex]
+  console.log('active', activeSlide)
   return (
     <TestimonialsSectionStyle>
       <div className='container'>
@@ -74,13 +80,13 @@ export default function TestimonialsSection() {
           <div className='testimonial_info'>
             <div className='testimonial_description'>
                 <ParagraphText>
-                Sugar plum chupa chups jelly-o apple pie gummies oat cake caramels. Pastry oat cake jelly-o cheesecake brownie.
+                  {activeSlide.desc}
                 </ParagraphText>
                 <h2 className='testimonial_name'>
-                  John Doe
+                {activeSlide.name}
                 </h2>
                 <p className='testimonial_title'>
-                  Web Developer
+                {activeSlide.title}, <br /> {activeSlide.org}
                 </p>
             </div>
           </div>
@@ -89,11 +95,11 @@ export default function TestimonialsSection() {
       </div>
       <div className='arrows'>
         <div className='prev'>
-         <MdArrowBack></MdArrowBack>
+         <MdArrowBack/>
         </div>
         <div className='next'>
           {/* <MdArrowForward></MdArrowForward> */}
-          <IoArrowForwardCircle></IoArrowForwardCircle>
+          <IoArrowForwardCircle/>
         </div>
       </div>
       </div>

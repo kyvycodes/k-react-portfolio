@@ -15,8 +15,8 @@ export default function ParagraphText(props) {
   // can also - destructor children from props
   // ex:
   // export default function ParagraphText({children}) - <p>{children}</p>
-  console.log(props)
-  console.log(props.children)
+  // console.log(props)
+  // console.log(props.children)
   return (
     <ParagraphStyle className="paragraph">
       <p>{props.children}</p>
