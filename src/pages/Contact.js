@@ -7,3 +7,5 @@ export default function Contacts() {
     </div>
   )
 }
+
+// https://reactjsexample.com/confetti-without-the-cleanup/ for a contact added
