@@ -3,6 +3,8 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import SectionTitle from './SectionTitle'
 import ParagraphText from './ParagraphText'
 import styled from 'styled-components'
+import { MdArrowBack, MdArrowForward } from 'react-icons/md'
+import { IoArrowForwardCircle } from 'react-icons/io5'
 
 
 const TestimonialsSectionStyle = styled.div`
@@ -36,11 +38,26 @@ text-align: center;
   font-size: 1.6rem;
   margin-top: 0.3rem;
 }
-
+.arrows {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  svg { //style only arrows
+    width: 30px;
+    pointer-events: none;
+  }
+  .prev,
+  .next {
+    margin: 0 0.5rem;
+    width: fit-content;
+    background-color: var(--deep-dark);
+    padding: 0.5rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
 `
-
-// .container
-
 
 
 
@@ -69,6 +86,15 @@ export default function TestimonialsSection() {
           </div>
         </CSSTransition>
       </SwitchTransition>
+      </div>
+      <div className='arrows'>
+        <div className='prev'>
+         <MdArrowBack></MdArrowBack>
+        </div>
+        <div className='next'>
+          {/* <MdArrowForward></MdArrowForward> */}
+          <IoArrowForwardCircle></IoArrowForwardCircle>
+        </div>
       </div>
       </div>
     </TestimonialsSectionStyle>
