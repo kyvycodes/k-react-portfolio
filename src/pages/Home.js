@@ -4,6 +4,7 @@ import AboutSection from '../components/AboutSection';
 import ProjectSection from '../components/ProjectSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactBanner from '../components/ContactBanner';
+import Footer from '../components/Footer';
 
 //functional component
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <ProjectSection />
       <TestimonialsSection />
       <ContactBanner/>
+      <Footer />
     </div>
   )
 }
