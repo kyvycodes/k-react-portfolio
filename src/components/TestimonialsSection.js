@@ -60,14 +60,31 @@ text-align: center;
 }
 `
 
-
-
 export default function TestimonialsSection() {
   //mange index with useState
   // useState(0) will be the first item in the array of testimonial data
   const [activeIndex, setActiveIndex] = useState(0)
   const activeSlide = testimonials[activeIndex]
   console.log('active', activeSlide)
+
+  //handles previous and next item changes
+  function handlePrevious(){
+    if(activeIndex <=  0){
+      setActiveIndex(testimonials.length-1)
+    } else {
+      setActiveIndex((currentIndex) => currentIndex - 1)
+    }
+  };
+
+  function handleNext(){
+    //if it is the last item
+    if(activeIndex >=  testimonials.length-1){
+      setActiveIndex(0)
+    } else {
+      setActiveIndex((currentIndex) => currentIndex + 1)
+    }
+  };
+
   return (
     <TestimonialsSectionStyle>
       <div className='container'>
@@ -94,10 +111,21 @@ export default function TestimonialsSection() {
       </SwitchTransition>
       </div>
       <div className='arrows'>
-        <div className='prev'>
+        <div
+        className='prev'
+        onClick={handlePrevious}
+        role='button'
+        tabIndex={0}
+        onKeyDown={handlePrevious}
+        >
          <MdArrowBack/>
         </div>
-        <div className='next'>
+        <div
+        className='next'
+        onClick={handleNext}
+        role='button'
+        tabIndex={0}
+        onKeyDown={handleNext}>
           {/* <MdArrowForward></MdArrowForward> */}
           <IoArrowForwardCircle/>
         </div>
