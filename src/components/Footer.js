@@ -1,10 +1,33 @@
 import React from 'react'
+import styled from 'styled-components'
 import FooterColumns from './FooterColumns'
 import ParagraphText from './ParagraphText'
 
+const FooterStyles = styled.div`
+  padding-top: 10rem;
+  background-color: var(--deep-dark);
+  .container {
+    display: flex;
+    gap: 3rem;
+  }
+  .footer_col1 {
+    flex: 2;
+  }
+  .footer_col2
+  .footer_col3
+  .footer_col4 {
+    flex: 1;
+  }
+
+  .footer_col1_title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+`
+
 export default function Footer() {
   return (
-    <div>
+    <FooterStyles>
       <div className='container'>
         <div className='footer_col1'>
           <h1 className="footer_col1_title">
@@ -24,6 +47,6 @@ export default function Footer() {
         <FooterColumns/>
         </div>
       </div>
-    </div>
+    </FooterStyles>
   )
 }
