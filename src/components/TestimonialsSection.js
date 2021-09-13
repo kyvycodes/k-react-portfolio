@@ -64,14 +64,16 @@ text-align: center;
 }
 .fade-enter-active {
   opacity: 1;
+  transition: 250ms ease-in opacity;
 }
 
-//inner transition
+//outer transition all within 300 ms
 .fade-exit {
   opacity: 1;
 }
 .fade-exit-active {
   opacity: 0;
+  transition: 250ms ease-in opacity;
 }
 `
 
