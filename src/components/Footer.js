@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import FooterColumns from './FooterColumns'
+import FooterColumn from './FooterColumn'
 import ParagraphText from './ParagraphText'
 
 const FooterStyles = styled.div`
@@ -23,6 +23,40 @@ const FooterStyles = styled.div`
     font-size: 3.5rem;
     margin-bottom: 1rem;
   }
+
+  .copyright {
+    background-color: var(--dark-bg);
+    text-align: left;
+    padding: 1rem 0;
+    margin-top: 5rem;
+    .paragraph {
+      margin-right: 0;
+    }
+
+  }
+
+
+  //TODO: refactor gaps
+  @media only screen and (max-width: 768px){
+    .container {
+      flex-direction: column;
+      gap: 0.5rem;
+      & > div {
+        margin-top: 5rem;
+      }
+    }
+
+    .footer_col1 .paragraph {
+      max-width 100;
+    }
+    .copyright {
+      .container {
+        div {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 `
 
 export default function Footer() {
@@ -38,13 +72,68 @@ export default function Footer() {
           </ParagraphText>
         </div>
         <div className='footer_col2'>
-          <FooterColumns/>
+          <FooterColumn
+          heading='Important Links'
+          // #TODO change home link to top of page jump
+          links ={[
+            {
+              type: 'link',
+              title: 'Home',
+              path:'/',
+            },  {
+              type:'link',
+              title:'About',
+              path:'/about'
+            },
+            {
+              type:'link',
+              title:'Projects',
+              path:'/projects'
+            },
+            {
+              type:'link',
+              title:'Contact',
+              path:'/contact'
+            }
+          ]}
+          />
         </div>
         <div className='footer_col3'>
-        <FooterColumns/>
+        <FooterColumn
+        heading='Contact Info'
+        links={[
+          {
+            title: 'number',
+            path: 'tel:'
+          },
+          {
+            title: 'gmail',
+            path: 'mailto:kyv.hardeman@gmail.com'
+          },
+          {
+            title: 'New York',
+            path: 'https://www.google.com/maps/@40.7639214,-73.9691709,13.74z'
+          }
+        ]}
+        />
         </div>
         <div className='footer_col4'>
-        <FooterColumns/>
+        <FooterColumn
+        heading='Social'
+        links={[
+              {
+                title: "Linkedin",
+                path: "https://www.linkedin.com/in/kay-hardeman/"
+              }
+        ]}
+        />
+        </div>
+      </div>
+      <div className="copyright">
+        <div className="container">
+          <ParagraphText>
+            2021
+          </ParagraphText>
         </div>
       </div>
     </FooterStyles>

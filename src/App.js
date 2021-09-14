@@ -6,6 +6,8 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
+
 
 
 export default function App() {
@@ -28,6 +30,7 @@ export default function App() {
       <Home/>
       </Route>
         </Switch>
+        <Footer />
     </Router>
     </>
   );
