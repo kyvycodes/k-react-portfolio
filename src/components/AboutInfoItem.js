@@ -25,10 +25,25 @@ const AboutInfoItemStyle = styled.div`
     padding: 1rem;
     border-radius: 8px;
   }
+  .about_info_items {
+    margin-top: 15rem;
+  }
 
+  @media only screen and (max-width: 768px){
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    .items {
+      position: initial;
+      gap: 1rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+  }
 `
 export default function AboutInfoItem({
-  title = "this is the title",
+  title = "title",
   items = [
     'html',
     'css',

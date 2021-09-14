@@ -49,6 +49,17 @@ const AboutPageStyle = styled.div`
       max-width: 100%;
     }
   }
+
+  .about_info_items {
+    margin-top: 15rem;
+  }
+  .about_info_item {
+    margin-bottom: 10rem;
+  }
+  .about_info_heading {
+    font-size: 3.6rem;
+    text-transform: uppercase;
+  }
 `
 
 export default function About() {
@@ -83,8 +94,23 @@ export default function About() {
          <div className='about_info_items'>
             <div className='about_info_item'>
               <h1 className='about_info_heading'>Education</h1>
-              <AboutInfoItem/>
+              <AboutInfoItem
+              title="High-School"
+              items={[
+                "Fullstack", "Knowledge House"
+              ]}
+              />
+              <AboutInfoItem
+              title="Coding Bootcamp"
+              items={[
+                "Fullstack", "Knowledge House"
+              ]}
+              />
             </div>
+
+
+
+
          </div>
        </div>
     </AboutPageStyle>
