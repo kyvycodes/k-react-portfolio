@@ -18,9 +18,34 @@ const AboutPageStyle = styled.div`
   .right {
     flex: 2;
   }
-  .right img {
-    width: 400px;
-    height: 400px;
+  // .right img {
+  //   width: 400px;
+  //   height: 400px;
+  // }
+  .right {
+    img {
+      border-radius: 50%;
+     border: 4px solid var(--gray-1);
+    }
+  }
+  .about_subheading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    span {
+      background-color: var(--deep-dark);
+      padding: 0.5rem;
+      border-radius: 8px;
+    }
+  }
+  .about_heading {
+    font-size: 3.6rem;
+    margin-bottom: 3rem;
+  }
+  .about_info {
+    margin-bottom: 4rem;
+    .paragraph {
+      max-width: 100%;
+    }
   }
 `
 
