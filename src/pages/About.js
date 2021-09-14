@@ -3,6 +3,7 @@ import ParagraphText from '../components/ParagraphText'
 import Button from '../components/Button'
 import AboutImg from '../assets/images/kyvz-avatar.png'
 import styled from 'styled-components'
+import AboutInfoItem from '../components/AboutInfoItem'
 
 const AboutPageStyle = styled.div`
   padding: 20rem 0 10rem 0;
@@ -73,6 +74,12 @@ export default function About() {
               <div className='right'>
                 <img src={AboutImg} alt="Bio Picture"/>
           </div>
+         </div>
+         <div className='about_info_items'>
+            <div className='about_info_item'>
+              <h1 className='about_info_heading'>Education</h1>
+              <AboutInfoItem/>
+            </div>
          </div>
        </div>
     </AboutPageStyle>
