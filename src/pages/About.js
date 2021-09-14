@@ -4,6 +4,7 @@ import Button from '../components/Button'
 import AboutImg from '../assets/images/kyvz-avatar.png'
 import styled from 'styled-components'
 import AboutInfoItem from '../components/AboutInfoItem'
+import ContactBanner from'../components/ContactBanner'
 import resume from '../assets/public/Kay_Hardeman.pdf'
 
 const AboutPageStyle = styled.div`
@@ -60,6 +61,25 @@ const AboutPageStyle = styled.div`
     font-size: 3.6rem;
     text-transform: uppercase;
   }
+
+  @media only screen and (max-width: 768px){
+    padding: 10rem 0;
+
+    .top_section {
+      flex-direction: column;
+      gap: 5rem;
+    }
+    .about_info_heading {
+      font-size: 3rem;
+    }
+    .about_subheading {
+      font-size: 1.8rem;
+    }
+    .about_heading {
+      font-size: 2.8rem;
+    }
+
+  }
 `
 
 export default function About() {
@@ -93,7 +113,22 @@ export default function About() {
          </div>
          <div className='about_info_items'>
             <div className='about_info_item'>
-              <h1 className='about_info_heading'>Education</h1>
+              <h1 className='about_info_heading'>My Skills</h1>
+              <AboutInfoItem
+              title="front end"
+              // items={[
+              //   "Fullstack", "Knowledge House"
+              // ]}
+              />
+              <AboutInfoItem
+              title="back end"
+              items={[
+                "Fullstack", "Knowledge House"
+              ]}
+              />
+            </div>
+            <div className='about_info_item'>
+              <h1 className='about_info_heading'>Coding Education</h1>
               <AboutInfoItem
               title="High-School"
               items={[
@@ -107,12 +142,24 @@ export default function About() {
               ]}
               />
             </div>
-
-
-
-
+            <div className='about_info_item'>
+              <h1 className='about_info_heading'>Volunteer Work</h1>
+              <AboutInfoItem
+              title="High-School"
+              items={[
+                "Fullstack", "Knowledge House"
+              ]}
+              />
+              <AboutInfoItem
+              title="Coding Bootcamp"
+              items={[
+                "Fullstack", "Knowledge House"
+              ]}
+              />
+            </div>
          </div>
        </div>
+       <ContactBanner/>
     </AboutPageStyle>
   )
 }

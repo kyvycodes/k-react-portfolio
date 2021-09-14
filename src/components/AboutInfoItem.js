@@ -9,7 +9,7 @@ const AboutInfoItemStyle = styled.div`
   justify-content: flex-start;
   position: relative;
   margin-top: 3rem;
-
+  position: relative;
 
   .title {
     font-size: 2.4rem;
