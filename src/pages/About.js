@@ -4,6 +4,7 @@ import Button from '../components/Button'
 import AboutImg from '../assets/images/kyvz-avatar.png'
 import styled from 'styled-components'
 import AboutInfoItem from '../components/AboutInfoItem'
+import resume from '../assets/public/Kay_Hardeman.pdf'
 
 const AboutPageStyle = styled.div`
   padding: 20rem 0 10rem 0;
@@ -69,7 +70,11 @@ export default function About() {
                       Dessert chupa chups wafer tiramisu chocolate cake bonbon cake. Gingerbread donut caramels sesame snaps oat cake liquorice dragée liquorice pie. Sweet lemon drops wafer biscuit candy canes sesame snaps. Topping pastry bonbon chocolate cake jujubes. Marzipan topping danish sesame snaps wafer cookie dragée dragée.
                     </ParagraphText>
                  </div>
-                <Button btnText='Download Resume' btnLink='#' outline={false}/>
+                {/* <Button btnText='Download Resume' btnLink='#' outline={false} to={resume}  target="_blank" download /> */}
+
+                {/* #TODO - download button or style download  */}
+                <a href={resume} download="Kay_Hardeman.pdf"> Download Here </a>
+
               </div>
               <div className='right'>
                 <img src={AboutImg} alt="Bio Picture"/>

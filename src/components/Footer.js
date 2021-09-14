@@ -132,7 +132,10 @@ export default function Footer() {
       <div className="copyright">
         <div className="container">
           <ParagraphText>
-            2021
+          © 2021 - Kay Hardeman | Designed By{' '}
+          <a target="_blank" rel="noreferrer" href="http://webcifar.com">
+              web cifar
+            </a>{' '}
           </ParagraphText>
         </div>
       </div>
