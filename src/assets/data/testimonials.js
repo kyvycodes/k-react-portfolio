@@ -5,7 +5,7 @@ const testimonials = [
     title: 'CEO',
     org: 'WEB CIFAR',
     desc:
-      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+      'Sweet roll chupa chups sweet roll fruitcake jelly beans ice cream toffee carrot cake.',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const testimonials = [
     title: 'Co-founder',
     org: 'Kreetive',
     desc:
-      'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
+      'Sweet roll chupa chups sweet roll fruitcake jelly beans ice cream toffee carrot cake. ',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const testimonials = [
     title: 'Marketing Head',
     org: 'Eleven Dawn',
     desc:
-      'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
+      'Gingerbread dragée toffee tiramisu gummi bears chocolate bar.',
   },
 ];
 export default testimonials;
