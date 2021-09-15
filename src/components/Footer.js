@@ -29,9 +29,9 @@ const FooterStyles = styled.div`
     text-align: left;
     padding: 1rem 0;
     margin-top: 5rem;
-    .paragraph {
-      margin-right: 0;
-    }
+    // .paragraph {
+    //   margin-right: 0;
+    // }
 
   }
 
@@ -131,12 +131,14 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <ParagraphText>
+          {/* <ParagraphText> */}
+          <p>
           © 2021 - Kay Hardeman | Designed By{' '}
           <a target="_blank" rel="noreferrer" href="http://webcifar.com">
               web cifar
             </a>{' '}
-          </ParagraphText>
+          {/* </ParagraphText> */}
+          </p>
         </div>
       </div>
     </FooterStyles>
