@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import AboutInfoItem from '../components/AboutInfoItem'
 import ContactBanner from'../components/ContactBanner'
 import resume from '../assets/public/Kay_Hardeman.pdf'
+import DocumentDownload from '../components/DocumentDownload'
 
 const AboutPageStyle = styled.div`
   padding: 20rem 0 10rem 0;
@@ -43,6 +44,7 @@ const AboutPageStyle = styled.div`
   .about_heading {
     font-size: 3.6rem;
     margin-bottom: 3rem;
+    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
   }
   .about_info {
     margin-bottom: 4rem;
@@ -91,7 +93,7 @@ export default function About() {
            <p className='about_subheading'>
               Hi, I am <span>Kay Hardeman</span>
               </p>
-                <h2 className='about_heading'>A blah blah blah</h2>
+                <h2 className='about_heading'>Software Engineer</h2>
                   <div className='about_info'>
                     <ParagraphText>
                      Oat cake lollipop wafer cake shortbread. Oat cake pudding cake candy wafer topping. Sweet ice cream liquorice halvah sugar plum apple pie pie jujubes. Cake chocolate bar lemon drops pie marshmallow marzipan apple pie icing.
@@ -104,8 +106,8 @@ export default function About() {
                 {/* <Button btnText='Download Resume' btnLink='#' outline={false} to={resume}  target="_blank" download /> */}
 
                 {/* #TODO - download button or style download  */}
-                <a href={resume} download="Kay_Hardeman.pdf"> Download Here </a>
-
+                {/* <a href={resume} download="Kay_Hardeman.pdf"> Download Here </a> */}
+                <DocumentDownload/>
               </div>
               <div className='right'>
                 <img src={AboutImg} alt="Bio Picture"/>
@@ -145,15 +147,15 @@ export default function About() {
             <div className='about_info_item'>
               <h1 className='about_info_heading'>Volunteer Work</h1>
               <AboutInfoItem
-              title="High-School"
+              title="2020 - 2021"
               items={[
-                "Fullstack", "Knowledge House"
+                "Code Nation"
               ]}
               />
               <AboutInfoItem
-              title="Coding Bootcamp"
+              title="2021"
               items={[
-                "Fullstack", "Knowledge House"
+                "Black Is Tech Virtual Conference"
               ]}
               />
             </div>
