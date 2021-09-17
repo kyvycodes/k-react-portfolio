@@ -1,5 +1,4 @@
 import React from 'react'
-import ContactForm from '../components/ContactForm'
 import ContactSection from '../components/ContactSection'
 
 
@@ -9,7 +8,6 @@ export default function Contacts() {
       <h1>This is the contact page</h1>
       <div>
         <ContactSection />
-        <ContactForm />
         <test />
       </div>
     </div>
