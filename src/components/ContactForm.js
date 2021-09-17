@@ -1,10 +1,20 @@
 import React, { useState } from 'react'
 
 export default function ContactForm() {
-  // const [name, setName] = useState('');
+  const [name, setName] = useState('');
   return (
     <div>
-      <h1>HELLO FROM FORM</h1>
+       <form>
+          <div className='form_group'>
+            <label htmlFor='name'>Your Name</label>
+            <input
+            type="text"
+            id='name'
+            name='name'
+            value={name}
+            onChange={e => setName(e.target.value)}/>
+          </div>
+        </form>
     </div>
   )
 }
