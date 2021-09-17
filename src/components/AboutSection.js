@@ -19,7 +19,7 @@ const AboutSectionStyle = styled.div`
    max-height: 400px;
    height: auto;
    width: auto;
-   filter: sepia(100%);
+  //  filter: sepia(100%);
    float: right;
  }
 
