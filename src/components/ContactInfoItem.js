@@ -1,6 +1,8 @@
 import React from 'react'
 import { MdPlace } from 'react-icons/md'
 import ParagraphText from '../components/ParagraphText'
+import styled from 'styled-components'
+
 
 const ItemStyles = styled.div`
 padding: 2rem;
@@ -28,11 +30,11 @@ export default function ContactInfoItem({
   text = 'This is some info'
 }) {
   return (
-    <div>
+    <ItemStyles>
       <div className='icon'>{icon}</div>
       <div className='info'>
         <ParagraphText>{text}</ParagraphText>
       </div>
-    </div>
+    </ItemStyles>
   )
 }
