@@ -32,6 +32,23 @@ padding: 10rem 0;
   width: 100%;
   max-width: 500px;
 }
+@media only screen and (max-width: 768px){
+.contact_section_wrapper{
+  flex-direction: column;
+}
+.contact_section_wrapper::after {
+  display: none;
+}
+.left_info,
+.right_form {
+  max-width: 100%;
+  }
+.right_form {
+    padding: 4rem 2rem 2rem 2rem;
+  }
+}
+
+
 `
 
 export default function ContactSection() {
