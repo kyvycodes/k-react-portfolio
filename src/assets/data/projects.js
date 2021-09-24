@@ -9,17 +9,40 @@ import MagicImg from '../images/magic.jpg'
 const projects = [
   {
     id: uuidv4(),
-    name: 'Jelly Beans Powder',
+    name: 'Event Share',
     desc:
-      'Jelly beans powder powder macaroon pie sesame snaps. Marshmallow pudding chupa chups marzipan ice cream donut. Jelly cake cupcake tootsie roll ice cream pie. Dragée sugar plum sesame snaps gummi bears tart bonbon.',
+      'Planning an event, no matter how big or small can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. The app can be used for any get-together, family reunions, parties, among other activities.',
     img: MagicImg,
+    // features: [
+      Javascript
+// 'React',
+// 'Redux',
+// 'Node.js',
+// 'Express',
+// 'Sequelize',
+// 'PostgresSQL',
+// 'SendGrid',
+// 'Material-UI',
+// 'Google Maps Integration',
+// 'Google Calendar Integration',
+// 'Mocha'
+//     ]
   },
   {
     id: uuidv4(),
-    name: 'Gummies Cupcake',
+    name: 'Plantagram',
     desc:
-      'Gummies cupcake halvah cupcake cotton candy sugar plum topping sweet brownie. Chupa chups cupcake ice cream liquorice halvah. Gingerbread pudding jelly chupa chups sweet roll pudding gummi bears.',
+      'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
     img: MagicImg,
+    // features: ['User can view a list of options',
+// 'User can choose a single plant',
+// 'User can filter for inventory of a specific season',
+// 'User can add items to a cart',
+// 'User can create an account to log in',
+// 'User can log in using Google account',
+// 'When the user is not logged in they may still alter shopping cart using local storage',
+// 'User my check out logged in or as a guest',
+// 'Admin can view each users information]'
   },
   {
     id: uuidv4(),
@@ -27,6 +50,7 @@ const projects = [
     desc:
       'Caramels donut candy canes gummi bears pie sesame snaps marshmallow chocolate cake. Marzipan cotton candy bonbon chocolate bonbon pudding sweet muffin. Gummies chocolate chupa chups croissant toffee carrot cake candy liquorice danish.',
     img: MagicImg,
+    // features: []
   },
   {
     id: uuidv4(),
@@ -34,6 +58,7 @@ const projects = [
     desc:
       'Cake fruitcake tart wafer wafer wafer. Shortbread gummies jelly-o gingerbread carrot cake. Jujubes cake dragée topping pie bonbon danish donut chocolate bar.',
     img: MagicImg,
+    // features: []
   },
   {
     id: uuidv4(),
@@ -41,6 +66,7 @@ const projects = [
     desc:
       'Pudding bonbon lemon drops fruitcake topping pastry marshmallow pudding cupcake. Icing icing candy croissant gummies pastry. Danish oat cake marzipan topping jujubes macaroon biscuit candy canes.',
     img: MagicImg,
+    // features: []
   },
 ];
 
