@@ -21,7 +21,8 @@ const HeroStyles = styled.div`
 }
 .hero_heading {
   font-size: 1.5rem;
-  margin-bottom: -5.5rem;
+  // margin-bottom: -5.5rem;
+  margin-bottom: -50rem;
   position: relative;
   span {
     display: inline-block;
@@ -30,17 +31,18 @@ const HeroStyles = styled.div`
   }
   .hero_name {
     font-size: 6rem;
-    //TODO change font
-    // font-family:
+    font-family: 'Poppins', sans-serif;
     color: var(--white)
   }
 }
 .door_img {
-  max-width: 900px;
+  // max-width: 900px;
   width: 100%;
-  height: 600px;
+  height: 100%;
+
+  // height: 600px;
   margin: 0 auto;
-  border: 2px solid var(--gray-1);
+  // border: 2px solid var(--gray-1);
 }
 
 .hero_info {
@@ -172,8 +174,8 @@ export default function HeroSection() {
       <div className='hero_section'>
       <div className='container'>
         <h1 className='hero_heading'>
-         <span>Hello I'm </span>
-          <span className="hero_name">Kay Hardeman</span>
+         {/* <span>Hello I'm </span> */}
+          <span className="hero_name">Hi, I'm Kay Hardeman</span>
           </h1>
           <div className="door_img">
             <img src={DoorImg} alt=''/>

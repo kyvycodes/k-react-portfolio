@@ -11,13 +11,14 @@ const GlobalStyles = createGlobalStyle`
     // --gray-1: #BCB4B4;
     // --deep-dark: #1E1E1E;
     // --gray-2: #363636;
-    --dark-bg: #F2F3F4;
-    --gray-1: #1E1E1E;
-    --deep-dark: #f4acb7 ;
-    --gray-2: #9d8189;
-    // #d8e2dc , #ffcad4, #ffe5d9, #f4acb7, #9d8189;
-    --white : white;
-    --black: black;
+    // #e6afb5 , #e9bcc1, #c18088, #271d1d, #534344, #efeae5
+    --dark-bg: white;
+    --gray-1:  #c18088;
+    --deep-dark:  #e9bcc1 ;
+    --gray-2: #534344;
+
+    --white: #efeae5;
+    --black: #271d1d;
   }
   html{
     font-size: 10px;

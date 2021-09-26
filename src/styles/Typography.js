@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import RobotoMonoRegular from '../assets/fonts/RobotoMono-Regular.ttf';
 import MontserratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
 import MontserratBold from '../assets/fonts/Montserrat-Bold.ttf';
+import PoppinsSemiBold from '../assets/fonts/Poppins-SemiBold.ttf'
 
 const Typography = createGlobalStyle`
   @font-face {
@@ -19,6 +20,11 @@ const Typography = createGlobalStyle`
     src: url(${MontserratBold});
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Poppins SemiBold';
+    scr: url(${PoppinsSemiBold})
+    font-style: normal;
+  }
   html{
     font-family: 'RobotoMono Regular';
     color: var(--gray-1);
@@ -28,7 +34,7 @@ const Typography = createGlobalStyle`
     color: var(--gray-1);
   }
   h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat SemiBold'
+    font-family: 'Montserrat SemiBold',
   }
 `;
 
