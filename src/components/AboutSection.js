@@ -4,6 +4,7 @@ import ParagraphText from './ParagraphText'
 import SectionTitle from './SectionTitle'
 import Office from '../assets/images/office.jpg'
 import styled from 'styled-components'
+import Cube from './Cube'
 // import Magic from '../assets/images/magic.jpg'
 
 const AboutSectionStyle = styled.div`
@@ -108,8 +109,9 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="about_section_right">
-          <img src={Office} alt=""/>
-x          {/* <img src={Magic} alt=""/> */}
+          {/* <img src={Office} alt=""/> */}
+          <Cube/>
+          {/* <img src={Magic} alt=""/> */}
         </div>
       </div>
     </AboutSectionStyle>
