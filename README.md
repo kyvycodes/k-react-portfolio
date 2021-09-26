@@ -1,5 +1,7 @@
 # React Portfolio website
 
-Designed by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com)
+<!-- Origin Design by - [shaif Arfan](http://github.com/shaifarfan) | [web cifar](http://webcifar.com) -->
 
-![](./ReadMeImages/ReadMeBanner.png)
+![](src/assets/images/door.jpg)
+
+To run: npm start

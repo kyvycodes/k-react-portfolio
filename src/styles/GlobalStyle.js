@@ -7,10 +7,15 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    --dark-bg: #262626;
-    --gray-1: #BCB4B4;
-    --deep-dark: #1E1E1E;
-    --gray-2: #363636;
+    // --dark-bg: #262626;
+    // --gray-1: #BCB4B4;
+    // --deep-dark: #1E1E1E;
+    // --gray-2: #363636;
+    --dark-bg: #F2F3F4;
+    --gray-1: #1E1E1E;
+    --deep-dark: #f4acb7 ;
+    --gray-2: #9d8189;
+    // #d8e2dc , #ffcad4, #ffe5d9, #f4acb7, #9d8189;
     --white : white;
     --black: black;
   }

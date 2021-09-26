@@ -109,7 +109,7 @@ export default function AboutSection() {
         </div>
         <div className="about_section_right">
           <img src={Office} alt=""/>
-          {/* <img src={Magic} alt=""/> */}
+x          {/* <img src={Magic} alt=""/> */}
         </div>
       </div>
     </AboutSectionStyle>

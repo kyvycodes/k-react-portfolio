@@ -1,5 +1,6 @@
 import React from 'react'
-import { MdEmail, MdLocalPhone } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md'
+import { BiHappyBeaming } from 'react-icons/bi'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
 import ContactForm from './ContactForm'
@@ -31,6 +32,7 @@ padding: 10rem 0;
 .right_form {
   width: 100%;
   max-width: 500px;
+  border-radius: 12px;
 }
 @media only screen and (max-width: 768px){
 .contact_section_wrapper{
@@ -55,18 +57,18 @@ export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className='container'>
+
         <SectionTitle
         subtitle='Contact'
         title='Get In Touch'
         />
-        <div className='contact_section_wrapper'></div>
+        <div className='contact_section_wrapper'>
         <div className='left_info'>
           <ContactInfoItem
-            icon = { < MdLocalPhone /> }
-            text = '123-456-7890'
+            icon = { < BiHappyBeaming />}
+            text = 'Hey ! Please feel free to reach out to me if you want to schedule a meeting, etc etc '
           />
           <ContactInfoItem
-            // icon = { MdEmail }
             icon = { < MdEmail /> }
             text = 'This is some info'/>
           <ContactInfoItem
@@ -74,6 +76,7 @@ export default function ContactSection() {
         </div>
         <div className='right_form'>
           <ContactForm />
+          </div>
         </div>
       </div>
     </ContactSectionStyle>

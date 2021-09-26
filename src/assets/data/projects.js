@@ -14,7 +14,7 @@ const projects = [
       'Planning an event, no matter how big or small can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. The app can be used for any get-together, family reunions, parties, among other activities.',
     img: MagicImg,
     // features: [
-      Javascript
+      // Javascript
 // 'React',
 // 'Redux',
 // 'Node.js',

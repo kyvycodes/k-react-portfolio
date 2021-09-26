@@ -36,11 +36,17 @@ const IndividualProjectStyle = styled.div`
 }
 
 `
+// TODO
+// popup responsiveness when project is highlighted
 
 export default function IndividualProject({
   img = ProjectImg,
   title = "Project Name",
-  description = "Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies."
+  description = "Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies.",
+  // TODO
+  // visit = Project Link
+  // github = link to github
+  // demo = if necessary
 }) {
   return (
     <IndividualProjectStyle>
