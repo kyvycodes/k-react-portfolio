@@ -92,11 +92,9 @@ export default function AboutSection() {
       <div className='container'>
         <div className="about_section_left">
           <SectionTitle
-          subtitle="Let me reintroduce myself my name is Hov"
-          title="About me !!!"
+          title="About me 👩🏽‍💻"
           />
-          <ParagraphText>
-          Gingerbread jelly-o I love jujubes cheesecake liquorice dragée icing toffee. Ice cream shortbread powder I love bonbon. Gingerbread liquorice wafer ice cream I love chocolate chupa chups I love. Muffin gummi bears danish tootsie roll carrot cake toffee cheesecake.
+          <ParagraphText>A software engineer with a passion for teaching. I am dedicated to fine-tuning my skills through mentorship from more seasoned developers and tirelessly working toward self improvement by learning all I can on my own. I became an engineer to help shape the global tech landscape and a build bridge between the world I came from and the innovations I believe our future world will require.
           </ParagraphText>
           <div className="about_section_buttons">
             <Button

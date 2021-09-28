@@ -12,8 +12,8 @@ const GlobalStyles = createGlobalStyle`
     // --deep-dark: #1E1E1E;
     // --gray-2: #363636;
     // #e6afb5 , #e9bcc1, #c18088, #271d1d, #534344, #efeae5
-    --dark-bg: white;
-    --gray-1:  #c18088;
+    --dark-bg: #f5f3ef;
+    --gray-1:  black;
     --deep-dark:  #e9bcc1 ;
     --gray-2: #534344;
 

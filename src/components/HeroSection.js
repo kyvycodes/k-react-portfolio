@@ -8,6 +8,9 @@ import Interests from '../assets/images/interests-arrow.svg'
 import ScrollDown from '../assets/images/scroll-down-arrow.svg'
 
 const HeroStyles = styled.div`
+font-family: 'Poppins', sans-serif;
+color: white;
+
 .hero_section{
   height: 100vh;
   min-height: 1000px;
@@ -21,8 +24,9 @@ const HeroStyles = styled.div`
 }
 .hero_heading {
   font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
   // margin-bottom: -5.5rem;
-  margin-bottom: -50rem;
+  margin-bottom: -33rem;
   position: relative;
   span {
     display: inline-block;
@@ -36,18 +40,19 @@ const HeroStyles = styled.div`
   }
 }
 .door_img {
-  // max-width: 900px;
-  width: 100%;
-  height: 100%;
+  max-width: 900px;
+  box-shadow: 0 0 2em #e6afb5 ;
+  // width: 100%;
+  // height: 100%;
 
-  // height: 600px;
+  height: 600px;
   margin: 0 auto;
   // border: 2px solid var(--gray-1);
 }
 
 .hero_info {
   margin-top: -20rem;
-
+  color: white;
 }
 
 .hero_interests,
@@ -181,7 +186,7 @@ export default function HeroSection() {
             <img src={DoorImg} alt=''/>
           </div>
           <div className="hero_info">
-            <ParagraphText> I am a child of PText component - Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies. </ParagraphText>
+            <ParagraphText> <strong>Open, inventive, excited, diverse, creator. Welcome to my page ✨</strong> </ParagraphText>
             <Button btnLink ='/projects' btnText='View My Work 🌸' outline={false}/>
           {/* props created by me: btnLink, btnText, outline - can be named whatever and can have multiple datatypes */}
           </div>

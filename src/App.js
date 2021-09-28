@@ -7,12 +7,19 @@ import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
+import styled from 'styled-components';
 
-
+const AppStyle = styled.div`
+// background-color: #f8f9d2;
+// // background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+// background-color: #fba8a4;
+// background-image: linear-gradient(315deg, #fba8a4 0%, #dad2f3 74%);
+background-color: #f7f5f2
+`
 
 export default function App() {
   return (
-    <>
+    <AppStyle>
     {/* <HeroSection/> */}
     <Router>
       <NavMenu/>
@@ -32,6 +39,6 @@ export default function App() {
         </Switch>
         <Footer />
     </Router>
-    </>
+    </AppStyle>
   );
 }

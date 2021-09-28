@@ -5,7 +5,11 @@ import { MdMenu, MdClose} from 'react-icons/md'
 
 // variable colors currently from globalStyles
 const NavMenuStyle = styled.div`
-background-color: var(--dark-bg);
+background-color:  #E01A4F;
+// opacity: 0.2;
+color: #FFC0CB;
+// background-color: var(--dark-bg);
+
 position: fixed;
 z-index: 100;
 top: 0;
@@ -19,6 +23,8 @@ ul{
   text-align: center;
   li {
     display: inline-block;
+    // display: flex;
+    justify-content: space-between;
     border-radius: 8px;
     transition: 0.3s ease background-color;
     &:hover {
@@ -26,11 +32,14 @@ ul{
     }
   }
   a {
-    display: inline-block;
+    // display: inline-block;
+    display: flex;
+    justify-content: space-between;
     font-family: 'RobotoMono Regular';
     padding: 1rem 2rem;
     font-size: 2rem;
-    color: var(--gray-1);
+    // color: var(--gray-1);
+    color: #FFC0CB;
     outline: none;
   }
   .active {
