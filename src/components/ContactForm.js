@@ -10,6 +10,7 @@ width: 100%;
   margin-bottom: 2rem;
   label = font-size: 1.8rem;
 }
+
 input,
 textarea {
   width: 100%;
@@ -38,6 +39,11 @@ button[type='submit']{
   cursor: pointer;
 
 }
+
+// .success {}
+// .error {}
+
+
 `
 
 
@@ -80,6 +86,7 @@ export default function ContactForm() {
              </label>
           </div>
           <button type="submit">Send</button>
+          <div className="success">Success!</div>
         </form>
     </FormStyle>
   )

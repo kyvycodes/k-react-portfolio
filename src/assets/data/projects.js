@@ -5,6 +5,9 @@ import { v4 as uuidv4 } from 'uuid';
 // import CoinTrackerImg from '../images/cointracker.jpg';
 // import CavinImg from '../images/cavinimg.jpg';
 import MagicImg from '../images/magic.jpg'
+import AffectsOfaHue from '../images/affectsofahue.png'
+import EventShare from '../images/eventshare.png'
+
 
 const projects = [
   {
@@ -12,7 +15,11 @@ const projects = [
     name: 'Event Share',
     desc:
       'Planning an event, no matter how big or small can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. The app can be used for any get-together, family reunions, parties, among other activities.',
-    img: MagicImg,
+    img: EventShare,
+    // github:
+    // deployed: https://event-share-app.herokuapp.com/
+    // demo:
+    //
     // features: [
       // Javascript
 // 'React',
@@ -43,14 +50,19 @@ const projects = [
 // 'When the user is not logged in they may still alter shopping cart using local storage',
 // 'User my check out logged in or as a guest',
 // 'Admin can view each users information]'
+    // github:
+    // deployed:
+    // demo:
   },
   {
     id: uuidv4(),
-    name: 'Caramels Donut',
+    name: 'Affects of a Hue',
     desc:
       'Caramels donut candy canes gummi bears pie sesame snaps marshmallow chocolate cake. Marzipan cotton candy bonbon chocolate bonbon pudding sweet muffin. Gummies chocolate chupa chups croissant toffee carrot cake candy liquorice danish.',
-    img: MagicImg,
-    // features: []
+    img: AffectsOfaHue,
+     // github:
+    // deployed: https://kyvycodes.github.io/affectsofahue/index.html
+    // demo:
   },
   {
     id: uuidv4(),

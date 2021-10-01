@@ -9,7 +9,6 @@ import ScrollDown from '../assets/images/scroll-down-arrow.svg'
 
 const HeroStyles = styled.div`
 font-family: 'Poppins', sans-serif;
-color: white;
 
 .hero_section{
   height: 100vh;
