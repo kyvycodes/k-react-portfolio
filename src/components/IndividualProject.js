@@ -10,7 +10,8 @@ const IndividualProjectStyle = styled.div`
   overflow: hidden;
   border-radius: 12px;
   display: inline-block;
-  border: 3px solid var(--gray-2);
+  box-shadow: 0 0 2em rgb(238, 214, 186);
+  // border: 1px solid rgb(238, 214, 186);
   img{
     height: 100%;
   }

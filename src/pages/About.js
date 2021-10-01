@@ -29,7 +29,8 @@ const AboutPageStyle = styled.div`
   .right {
     img {
       border-radius: 50%;
-     border: 4px solid var(--gray-1);
+     box-shadow: 0 0 2em #e6afb5 ;
+
     }
   }
   .about_subheading {

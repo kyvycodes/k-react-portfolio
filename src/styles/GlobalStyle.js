@@ -7,18 +7,31 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   :root{
-    // --dark-bg: #262626;
-    // --gray-1: #BCB4B4;
-    // --deep-dark: #1E1E1E;
-    // --gray-2: #363636;
-    // #e6afb5 , #e9bcc1, #c18088, #271d1d, #534344, #efeae5
     --dark-bg: #f5f3ef;
     --gray-1:  black;
-    --deep-dark:  #e9bcc1 ;
+    --deep-dark: #ebdcd3;
+    // --gray-2: #534344;
     --gray-2: #534344;
-    // rgb(238, 214, 186) #ecd1d1
     --white: #efeae5;
-    --black: #271d1d;
+    --black: #100f0e;
+// #87685a
+// #d8af95
+// #ebdcd3
+// #ecddd6
+// #e6b396
+// #a49a95
+// #100f0e
+// rgb(238, 214, 186)
+// #ecd1d1
+
+// backup set
+// #e6afb5
+// #e9bcc1
+// #c18088
+// #271d1d
+// #534344
+// #efeae5
+
   }
   html{
     font-size: 10px;

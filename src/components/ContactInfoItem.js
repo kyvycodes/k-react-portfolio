@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const ItemStyles = styled.div`
 padding: 2rem;
-background-color: var(--deep-dark);
+background-color: #e6b396;
 display: flex;
 align-items: center;
 gap: 2rem;

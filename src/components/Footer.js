@@ -4,8 +4,8 @@ import FooterColumn from './FooterColumn'
 import ParagraphText from './ParagraphText'
 
 const FooterStyles = styled.div`
-  padding-top: 10rem;
-  background-color: var(--deep-dark);
+  padding-top: 2rem;
+  background-color: #e6b396;
   .container {
     display: flex;
     gap: 3rem;
@@ -20,7 +20,7 @@ const FooterStyles = styled.div`
   }
 
   .footer_col1_title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
   }
 
@@ -28,10 +28,10 @@ const FooterStyles = styled.div`
     background-color: var(--dark-bg);
     text-align: left;
     padding: 1rem 0;
-    margin-top: 5rem;
-    // .paragraph {
-    //   margin-right: 0;
-    // }
+    margin-top: 2rem;
+    .paragraph {
+      margin-right: 0;
+    }
 
   }
 

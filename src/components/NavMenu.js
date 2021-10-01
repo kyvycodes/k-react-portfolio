@@ -6,7 +6,6 @@ import { MdMenu, MdClose} from 'react-icons/md'
 // variable colors currently from globalStyles
 const NavMenuStyle = styled.div`
 opacity: 0.4;
-// rgb(238, 214, 186) #ecd1d1
 background-color: rgb(238, 214, 186);
 
 position: fixed;

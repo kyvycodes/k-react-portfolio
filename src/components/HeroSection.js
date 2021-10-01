@@ -39,9 +39,9 @@ font-family: 'Poppins', sans-serif;
   }
 }
 .door_img {
-  max-width: 900px;
+  // max-width: 900px;
   box-shadow: 0 0 2em #e6afb5 ;
-  // width: 100%;
+  width: 100%;
   // height: 100%;
 
   height: 600px;

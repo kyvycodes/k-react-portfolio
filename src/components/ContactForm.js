@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 const FormStyle = styled.div`
 width: 100%;
+
 .form_group {
   width: 100%;
   margin-bottom: 2rem;
@@ -17,7 +18,7 @@ textarea {
   font-size: 2rem;
   padding: 1.2rem;
   color: var(--gray-1);
-  background-color: var(--deep-dark);
+  background-color: #e6b396;
   outline: none;
   border: none;
   border-radius: 8px;
