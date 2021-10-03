@@ -27,7 +27,7 @@ const IndividualProjectStyle = styled.div`
 }
 .individual_project_description {
   font-size: 1.6rem;
-  font-family: 'RobotoMono Regular';
+  font-family: 'WorkSans Regular';
   marin-top: 1rem;
 }
 @media only screen and (max-width: 768px) {

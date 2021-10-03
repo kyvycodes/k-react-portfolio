@@ -4,11 +4,11 @@ import styled from 'styled-components'
 const SectionTitleStyle = styled.div`
   text-align: center; //default styling
   p {
-    font-family: "RobotoMono Regular";
+    font-family: "WorkSans Regular";
     font-size: 2rem;
   }
   h2 {
-    font-family: 'Montserrat Bold';
+    font-family: 'Poppins SemiBold';
     font-size: 6rem;
     margin-top: 0.5rem;
     text-transform: uppercase;

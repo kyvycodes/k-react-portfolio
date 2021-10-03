@@ -32,7 +32,7 @@ text-align: center;
 }
 .testimonial_name {
   margin-top: 4rem;
-  font-family: 'Montserrat Bold':
+  font-family: 'Poppins SemiBold':
   font-size: 2.2rem;
 }
 .testimonial_title {

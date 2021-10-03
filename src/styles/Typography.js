@@ -23,31 +23,33 @@ const Typography = createGlobalStyle`
     font-style: normal;
   }
   // @font-face {
-  //   font-family: 'RobotoMono Regular';
+  //   font-family: 'WorkSans Regular';
   //   src: url(${RobotoMonoRegular});
   //   font-style: normal;
   // }
-  @font-face {
-    font-family: 'Montserrat SemiBold';
-    src: url(${MontserratSemiBold});
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Montserrat Bold';
-    src: url(${MontserratBold});
-    font-style: normal;
-  }
+
+
+  // @font-face {
+  //   font-family: 'Montserrat SemiBold';
+  //   src: url(${MontserratSemiBold});
+  //   font-style: normal;
+  // }
+  // @font-face {
+  //   font-family: 'Poppins SemiBold';
+  //   src: url(${MontserratBold});
+  //   font-style: normal;
+  // }
 
   html{
-    font-family: 'RobotoMono Regular';
-    color: var(--gray-1);
+    font-family: 'WorkSans Regular';
+    color: #87685a;
   }
   *{
-    font-family: 'Poppins SemiBold';
-    color: var(--gray-1);
+    font-family: 'WorkSans Regular';
+    color: #534344;
   }
   h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat SemiBold',
+    font-family: 'Poppins SemiBold',
   }
 `;
 

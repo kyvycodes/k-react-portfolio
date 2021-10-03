@@ -33,7 +33,7 @@ ul{
     // display: inline-block;
     display: flex;
     justify-content: space-between;
-    font-family: 'RobotoMono Regular';
+    font-family: 'WorkSans Regular';
     padding: 1rem 2rem;
     font-size: 2rem;
     // color: var(--gray-1);
