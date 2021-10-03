@@ -12,8 +12,6 @@ SwiperCore.use([Navigation])
 
 const ProjectSectionStyle = styled.div`
 padding: 10rem 0;
-// background-color: red;
-// .container
 
 .project_all_items {
   display: flex;
@@ -65,7 +63,7 @@ export default function ProjectSection() {
   return (
     <ProjectSectionStyle>
       <div className='container'>
-        <SectionTitle title="Projects" subtitle="Some of my recent work"/>
+        <SectionTitle title="Projects" subtitle="View of my recent work"/>
         <div className='project_all_items'>
           <Swiper
           spaceBetween={30}

@@ -5,12 +5,12 @@ const SectionTitleStyle = styled.div`
   text-align: center; //default styling
   p {
     font-family: "WorkSans Regular";
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h2 {
     font-family: 'Poppins SemiBold';
     font-size: 6rem;
-    margin-top: 0.5rem;
+    // margin-top: 0.5rem;
     text-transform: uppercase;
   }
 

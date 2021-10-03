@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import { MdMenu, MdClose} from 'react-icons/md'
+// import { MdMenu, MdClose} from 'react-icons/md'
 
-// variable colors currently from globalStyles
 const NavMenuStyle = styled.div`
 opacity: 0.4;
 background-color: rgb(238, 214, 186);
+
+.name {
+  font-family: 'Ephesis Regular';
+  font-size: 3rem;
+  color: #111111;
+  text-align: center;
+}
 
 position: fixed;
 z-index: 100;
@@ -36,7 +42,6 @@ ul{
     font-family: 'WorkSans Regular';
     padding: 1rem 2rem;
     font-size: 2rem;
-    // color: var(--gray-1);
     // color: #FFC0CB;
     outline: none;
   }
@@ -109,61 +114,64 @@ export default function NavMenu() {
   const [showNav, SetShowNav] = useState(false)
   return(
     <NavMenuStyle>
-      <div className='mobile-menu-icon'
-            onClick={() => SetShowNav(!showNav)}
-            role="button"
-            onKeyDown={() => SetShowNav(!showNav)}
-            tabIndex={0}>
-        <MdMenu />
-      </div>
-      <ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
-      {/* if false show nav items and hide item, if true just return nav tims */}
-        <div
-        className='close-nav-icon'
-        onClick={() => SetShowNav(!showNav)}
-        role="button"
-        //selects the icon with tab and then allows you to press any key to run
-        onKeyDown={() => SetShowNav(!showNav)}
-        tabIndex={0}
-        >
-          <MdClose/>
+      <div className='name'>
+        <p>Kay Hardeman</p>
         </div>
-        <li>
-          <NavLink
-          //to remove navbar after linking to the path
-          to="/"exact
-          onClick={() => SetShowNav(!showNav)}
-          role="button"
-          onKeyDown={() => SetShowNav(!showNav)}
-          tabIndex={0}
-          >Home</NavLink>
-          </li>
-          <li>
-          <NavLink
-          to="/projects"
-          onClick={() => SetShowNav(!showNav)}
-          role="button"
-          onKeyDown={() => SetShowNav(!showNav)}
-          tabIndex={0}
-          >Projects</NavLink>
-          </li>
-          <li>
-          <NavLink
-          to="/contact"
-          onClick={() => SetShowNav(!showNav)}
-          role="button"
-          onKeyDown={() => SetShowNav(!showNav)}
-          tabIndex={0}>Contact</NavLink>
-          </li>
-          <li>
-          <NavLink
-          to="/about"
-          onClick={() => SetShowNav(!showNav)}
-          role="button"
-          onKeyDown={() => SetShowNav(!showNav)}
-          tabIndex={0}>About</NavLink>
-          </li>
-      </ul>
     </NavMenuStyle>
   )
 }
+{/* <div className='mobile-menu-icon'
+onClick={() => SetShowNav(!showNav)}
+role="button"
+onKeyDown={() => SetShowNav(!showNav)}
+tabIndex={0}>
+<MdMenu />
+</div>
+<ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
+{/* if false show nav items and hide item, if true just return nav tims */}
+{/* <div
+className='close-nav-icon'
+onClick={() => SetShowNav(!showNav)}
+role="button"
+//selects the icon with tab and then allows you to press any key to run
+onKeyDown={() => SetShowNav(!showNav)}
+tabIndex={0}
+>
+<MdClose/>
+</div>
+<li>
+<NavLink
+//to remove navbar after linking to the path
+to="/"exact
+onClick={() => SetShowNav(!showNav)}
+role="button"
+onKeyDown={() => SetShowNav(!showNav)}
+tabIndex={0}
+>Home</NavLink>
+</li>
+<li>
+<NavLink
+to="/projects"
+onClick={() => SetShowNav(!showNav)}
+role="button"
+onKeyDown={() => SetShowNav(!showNav)}
+tabIndex={0}
+>Projects</NavLink>
+</li>
+<li>
+<NavLink
+to="/contact"
+onClick={() => SetShowNav(!showNav)}
+role="button"
+onKeyDown={() => SetShowNav(!showNav)}
+tabIndex={0}>Contact</NavLink>
+</li>
+<li>
+<NavLink
+to="/about"
+onClick={() => SetShowNav(!showNav)}
+role="button"
+onKeyDown={() => SetShowNav(!showNav)}
+tabIndex={0}>About</NavLink>
+</li>
+</ul> */}

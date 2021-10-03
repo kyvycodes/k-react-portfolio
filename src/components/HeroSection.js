@@ -3,7 +3,6 @@ import DoorImg from '../assets/images/door.jpg'
 import Button from './Button'
 import ParagraphText from './ParagraphText'
 import styled from 'styled-components'
-import Hero from '../assets/images/hero.png'
 import Interests from '../assets/images/interests-arrow.svg'
 import ScrollDown from '../assets/images/scroll-down-arrow.svg'
 

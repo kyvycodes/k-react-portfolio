@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import ProjectImg from '../assets/images/projectImg.png'
+import Office from '../assets/images/office.jpg'
 
 const IndividualProjectStyle = styled.div`
 .individual_project_img {
@@ -41,7 +41,7 @@ const IndividualProjectStyle = styled.div`
 // popup responsiveness when project is highlighted
 
 export default function IndividualProject({
-  img = ProjectImg,
+  img = Office,
   title = "Project Name",
   description = "Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies.",
   // TODO

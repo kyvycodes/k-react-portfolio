@@ -107,8 +107,8 @@ export default function TestimonialsSection() {
     <TestimonialsSectionStyle>
       <div className='container'>
       <SectionTitle
-      subtitle='This is a test'
-      title='this is testimonials'/>
+      subtitle='Hear what others are saying...'
+      title='Testimonials'/>
       <div className='testimonial_wrapper'>
       {/* http://reactcommunity.org/react-transition-group/switch-transition */}
       <SwitchTransition>
