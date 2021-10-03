@@ -30,6 +30,7 @@ const GlobalStyles = createGlobalStyle`
 // #271d1d
 // #534344
 // #efeae5
+// #FFC0CB
 
   }
   html{

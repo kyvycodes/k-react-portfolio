@@ -11,7 +11,7 @@ import testimonials from '../assets/data/testimonials'
 const TestimonialsSectionStyle = styled.div`
 padding: 10rem 0;
 text-align: center;
-// color: #FFC0CB;
+
 .testimonial_wrapper {
   position: relative;
   max-width: 700px;
@@ -22,6 +22,7 @@ text-align: center;
   height: fit-content; //makes dynamic
   padding: 3rem;
   background-color: var(--deep-dark);
+  border: 2px solid rgb(238, 214, 186);
   border-radius: 12px;
   margin-top: 5rem;
 }
@@ -52,6 +53,7 @@ text-align: center;
   .next {
     margin: 0 0.5rem;
     width: fit-content;
+    box-shadow: 0 0 .5em #e6b396;
     background-color: var(--deep-dark);
     padding: 0.5rem 2rem;
     border-radius: 8px;
@@ -151,8 +153,8 @@ export default function TestimonialsSection() {
         role='button'
         tabIndex={0}
         onKeyDown={handleNext}>
-          {/* <MdArrowForward></MdArrowForward> */}
-          <IoArrowForwardCircle/>
+          <MdArrowForward />
+          {/* <IoArrowForwardCircle/> */}
         </div>
       </div>
       </div>

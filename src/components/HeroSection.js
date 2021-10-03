@@ -178,7 +178,7 @@ export default function HeroSection() {
       <div className='container'>
         <h1 className='hero_heading'>
          {/* <span>Hello I'm </span> */}
-          <span className="hero_name">Hi, I'm Kay Hardeman</span>
+          {/* <span className="hero_name">Hi, I'm Kay Hardeman</span> */}
           </h1>
           <div className="door_img">
             <img src={DoorImg} alt=''/>
