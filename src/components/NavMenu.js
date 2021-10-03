@@ -7,6 +7,8 @@ const NavMenuStyle = styled.div`
 opacity: 0.4;
 background-color: rgb(238, 214, 186);
 
+
+//BUG not overriding
 .name {
   font-family: 'Ephesis Regular';
   font-size: 3rem;
