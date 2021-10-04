@@ -4,8 +4,16 @@ import FooterColumn from './FooterColumn'
 import ParagraphText from './ParagraphText'
 
 const FooterStyles = styled.div`
-  padding-top: 2rem;
+  padding-top: 1rem;
   background-color: #e6b396;
+
+  .name {
+    font-family: 'Ephesis Regular' ;
+    font-size: 6rem;
+    // color: #111111;
+    text-align: left;
+  }
+
   .container {
     display: flex;
     gap: 3rem;
@@ -20,7 +28,7 @@ const FooterStyles = styled.div`
   }
 
   .footer_col1_title {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
   }
 
@@ -64,11 +72,14 @@ export default function Footer() {
     <FooterStyles>
       <div className='container'>
         <div className='footer_col1'>
-          <h1 className="footer_col1_title">
+          {/* <h1 className="footer_col1_title">
               I am a footer
+          </h1> */}
+          <h1 className="name">
+              Kay Hardeman
           </h1>
           <ParagraphText>
-          Gingerbread jelly-o I love jujubes cheesecake liquorice dragée icing toffee. Ice cream shortbread powder I love bonbon. Gingerbread liquorice wafer ice cream I love chocolate chupa chups I love.
+          Open, inventive, excited, diverse, creator ✨
           </ParagraphText>
         </div>
         <div className='footer_col2'>
