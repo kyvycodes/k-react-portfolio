@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import ParagraphText from './ParagraphText'
 import SectionTitle from './SectionTitle'
-import Office from '../assets/images/office.jpg'
+import Collage from '../assets/images/Screen Shot 2021-10-02 at 11.53.15 PM.png'
 import styled from 'styled-components'
 import Cube from './Cube'
 // import Magic from '../assets/images/magic.jpg'
@@ -108,8 +108,8 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="about_section_right">
-          {/* <img src={Office} alt=""/> */}
-          <Cube/>
+          <img src={Collage} alt=""/>
+          {/* <Cube/> */}
           {/* <img src={Magic} alt=""/> */}
         </div>
       </div>

@@ -17,7 +17,7 @@ const AppStyle = styled.div`
 export default function App() {
   return (
     <AppStyle>
-    {/* <HeroSection/> */}
+    {/* <Hero Section/> */}
     <Router>
       <NavMenu/>
       <Switch>

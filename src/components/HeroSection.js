@@ -221,6 +221,7 @@ export default function HeroSection() {
               </ul>
           </div>
       </div>
+      {/* take a look around  */}
       <div className="hero_scroll_down">
       <p>scroll</p>
       <img src={ScrollDown} alt=''/>
