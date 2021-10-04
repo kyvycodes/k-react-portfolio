@@ -7,6 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 import MagicImg from '../images/magic.jpg'
 import AffectsOfaHue from '../images/affectsofahue.png'
 import EventShare from '../images/eventshare.png'
+import Plantagram from '../images/plantagram.png'
 
 
 const projects = [
@@ -40,7 +41,7 @@ const projects = [
     name: 'Plantagram',
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
-    img: MagicImg,
+    img: Plantagram,
     // features: ['User can view a list of options',
 // 'User can choose a single plant',
 // 'User can filter for inventory of a specific season',

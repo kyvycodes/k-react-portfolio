@@ -6,9 +6,10 @@ import Office from '../assets/images/office.jpg'
 const IndividualProjectStyle = styled.div`
 .individual_project_img {
   width: 100%;
-  height: 400px;
+  // height: 400px;
+  height: 100%;
   overflow: hidden;
-  border-radius: 12px;
+  // border-radius: 12px;
   display: inline-block;
   box-shadow: 0 0 2em rgb(238, 214, 186);
   // border: 1px solid rgb(238, 214, 186);
