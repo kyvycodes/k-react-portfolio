@@ -19,7 +19,7 @@ const projects = [
 
 
     // features: [
-      // Javascript
+// 'Javascript',
 // 'React',
 // 'Redux',
 // 'Node.js',
@@ -39,18 +39,7 @@ const projects = [
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
     img: Plantagram,
-    // link:
     github: 'https://github.com/kyvycodes/event-share-app'
-    // features: ['User can view a list of options',
-// 'User can choose a single plant',
-// 'User can filter for inventory of a specific season',
-// 'User can add items to a cart',
-// 'User can create an account to log in',
-// 'User can log in using Google account',
-// 'When the user is not logged in they may still alter shopping cart using local storage',
-// 'User my check out logged in or as a guest',
-// 'Admin can view each users information]'
-    // demo:
   },
   {
     id: uuidv4(),
@@ -59,9 +48,6 @@ const projects = [
       'Caramels donut candy canes gummi bears pie sesame snaps marshmallow chocolate cake. Marzipan cotton candy bonbon chocolate bonbon pudding sweet muffin. Gummies chocolate chupa chups croissant toffee carrot cake candy liquorice danish.',
     img: AffectsOfaHue,
     link: 'https://kyvycodes.github.io/affectsofahue/index.html'
-     // github:
-
-    // demo:
   },
   {
     id: uuidv4(),
@@ -69,11 +55,9 @@ const projects = [
     desc:
       'Cake fruitcake tart wafer wafer wafer. Shortbread gummies jelly-o gingerbread carrot cake. Jujubes cake dragée topping pie bonbon danish donut chocolate bar.',
     img:Portfolio,
-     // link:
     github: 'https://github.com/kyvycodes/k-react-portfolio'
-    // features: []
   },
-  // {
+  // { next project
     // id: uuidv4(),
     // name:
     // desc:
