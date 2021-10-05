@@ -10,7 +10,7 @@ const HeroStyles = styled.div`
 font-family: 'Poppins', sans-serif;
 
 .hero_section{
-  height: 100vh;
+  height: 80vh;
   min-height: 1000px;
   width: 100%;
   text-align: center;
@@ -33,18 +33,10 @@ font-family: 'Poppins', sans-serif;
   height: 100%;
 }
 
-.hero_info {
-  margin-top: -45rem;
-
-
-  // font-size: 20rem;
-}
-
 .hero_interests,
 .hero_scroll_down {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   position: absolute;
   bottom: 20px;
   width: 50px;
@@ -55,71 +47,39 @@ font-family: 'Poppins', sans-serif;
 }
 .hero_scroll_down {
   right: 50px;
+
 }
 
 .hero_interests_indicator,
 .hero_scroll_down {
-  width: 50px;
-  p {
-    font-size: 1.6rem;
-    transform: translateY(-70px) rotate(90deg); //rotates text
-    letter-spacing: .7rem; //increases visibility
-    text-transform: uppercase;
-  }
   img{
     max-height: 45px;
     width: 16px;
     margin: 0 auto;
+    max-height: 70px;
     object-fit: contain;
     color: #e6b396
-  }
-}
-.hero_scroll_down {
-//   p {
-//     transform: translateY(-70px) rotate(90deg); //rotates text
-//  }
-    img {
-    max-height: 70px;
-
-  }
-}
-
-.hero_interests_text {
-  ul {
-    li {
-      margin-bottom: 1rem;
-    }
-    a {
-      display: inline-block;
-      font: 1.4rem;
-      transform: rotate(-90deg);
-      // letter-spacing: 5px;
-      margin-bottom: 1.5rem;
-    }
   }
 }
 
 @media only screen and (max-width: 768px) {
   .hero_section {
-    min-height: 750px;
+    min-height: 600px;
   }
   .hero_heading {
     font-size: 1.4rem;
-    margin-bottom: -2.5rem;
-    .hero_name {
-      // font-size: 5.5rem;
-      font-size: 4.5rem;
-    }
+    margin-bottom: -10rem;
+    // margin-top: 3rem;
   }
   .door_img {
     height: 420px;
   }
 
-  //TODO refactor css for media
-  .hero_info {
-    margin-top: 3rem;
-    // margin-bottom: -5rem;
-  }
+  // //TODO refactor css for media
+  // .hero_info {
+  //   margin-top: 3rem;
+  //   // margin-bottom: -5rem;
+  // }
   //left side
   .hero_interests {
     left: 0px;
@@ -152,6 +112,7 @@ font-family: 'Poppins', sans-serif;
     width: 20px;
     right: 0;
     gap: 1rem;
+      color: #111111;
     p {
       font-size: 1.1rem;
     }
@@ -176,7 +137,7 @@ export default function HeroSection() {
           </div>
       <div className='hero_interests'>
           <div className='hero_interests_indicator'>
-            <p>follow</p>
+            {/* <p>scroll</p> */}
             <img src={ScrollDown} alt=''/>
             </div>
             <div className='hero_interests_text'>
@@ -184,7 +145,7 @@ export default function HeroSection() {
       </div>
       {/* take a look around  */}
       <div className="hero_scroll_down">
-      <p>scroll</p>
+      <p></p>
       <img src={ScrollDown} alt=''/>
       </div>
     </div>
