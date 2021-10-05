@@ -74,7 +74,9 @@ export default function ContactForm() {
 
 // TODO refactor css for after submit
   if(state.succeeded) {
-    return <div> It worked </div>
+    return <div>
+      this is a test
+      <Confetti/> </div>
   }
 
   return (
@@ -112,10 +114,13 @@ export default function ContactForm() {
           </div>
           <button
           type="submit"
-          disabled={state.submitting}>Send</button>
+          disabled={state.submitting}>
+
+            Send
+            </button>
           {/* <div className="success">Success!</div> */}
         </form>
-        <Confetti/>
+
     </FormStyle>
   )
 }

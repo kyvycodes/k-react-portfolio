@@ -154,7 +154,6 @@ export default function TestimonialsSection() {
         tabIndex={0}
         onKeyDown={handleNext}>
           <MdArrowForward />
-          {/* <IoArrowForwardCircle/> */}
         </div>
       </div>
       </div>

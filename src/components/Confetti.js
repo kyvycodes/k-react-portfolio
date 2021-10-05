@@ -156,14 +156,6 @@ const Particles = memo(({count: n}) => {
 
 let id = 1;
 
-//  {
-//   return (
-//     <ConfettiStyle>
-
-//     </ConfettiStyle>
-//   )
-// }
-
 
 export default function Confetti() {
   const [particles, setParticles] = useState([]);
@@ -186,14 +178,11 @@ export default function Confetti() {
       {particles.map(id => (
         <Particles key={id} count={Math.floor(innerWidth / 10)}/>
       ))}
-      <div className='button' onClick={handleOnClick}>
-        <div className='popper'/>
-        CLICK ME!</div>
+      <div onChange={handleOnClick}>
+        {/* <div className='popper'/>
+        CLICK ME Now!  */}
+        </div>
     </div>
     </ConfettiStyle>
   );
-
-
-
-
-      }
+ }
