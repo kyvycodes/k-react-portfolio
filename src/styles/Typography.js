@@ -44,10 +44,11 @@ const Typography = createGlobalStyle`
     font-family: 'WorkSans Regular';
     color: #87685a;
   }
-  // *{
-  //   font-family: 'WorkSans Regular';
-  //   color: #534344;
-  // }
+  a {
+    font-family: 'WorkSans Regular';
+    // color: #534344;
+    color: #111111;
+  }
 
   h1,h2,h3,h4,h5,h6{
     font-family: 'Poppins SemiBold',

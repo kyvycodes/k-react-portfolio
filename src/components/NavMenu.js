@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdMenu, MdClose} from 'react-icons/md'
-import { AiFillLinkedin } from 'react-icons/ai'
+import { FaLinkedin } from 'react-icons/fa'
 
 
 const NavMenuStyle = styled.div`
@@ -10,12 +10,13 @@ position: fixed;
 z-index: 100;
 top: 0;
 width: 100%;
-// left: 0;
+font-family: 'WorkSans Regular';
+
 
 .name {
-  font-family: 'Ephesis Regular'  ;
+  font-family: 'Ephesis Regular';
   font-size: 3rem;
-  color: #111111 ;
+  color: #111111;
   text-align: center;
   padding:  1rem;
   border-bottom: 2px solid #e6b396;
@@ -35,59 +36,50 @@ width: 100%;
   pointer-events: none;
 }
 
-.linkedin {
-  // // left: 1rem;
-  // // top: 1rem;
-  // // width: 3rem;
-  // // cursor: pointer;
-  // outline: none;
-  // display: block;
-  // width: 3rem;
-  // margin: 0 0 0 auto;
-  // cursor: pointer;
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  width: 4rem;
-  cursor: pointer;
-  outline: none;
-  * {
-  pointer-events: none;
-}
-
+// .linkedin {
+//   position: absolute;
+//   left: 1rem;
+//   top: 1rem;
+//   width: 4rem;
+//   cursor: pointer;
+//   outline: none;
+// }
 
 // ul{
 //   max-width: 1200px;
 //   margin: 0 auto;
 //   width: 90%;
-//   text-align: center;
-//   li {
-//     display: inline-block;
-//     // display: flex;
-//     justify-content: space-between;
-//     border-radius: 8px;
-//     transition: 0.3s ease background-color;
-//     &:hover {
-//       background-color: var(--deep-dark);
-//     }
+//
+  li {
+    display: inline-block;
+    // display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    transition: 0.3s ease background-color;
+    &:hover {
+      background-color: var(--deep-dark);
+    }
 //   }
 
 
-//   a {
-//     // display: inline-block;
-//     display: flex;
-//     justify-content: space-between;
-//     font-family: 'WorkSans Regular';
-//     padding: 1rem 2rem;
-//     font-size: 2rem;
-//     // color: #FFC0CB;
-//     outline: none;
-//   }
-//   .active {
-//     // color: #FFC0CB;
-//     color: #271d1d;
-//   }
-// }
+  a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: #FFC0CB;
+    outline: none;
+  }
+  .active {
+    color: #FFC0CB;
+    opacity: .4;
+  }
+}
+
+li:active {
+  color: #111111;
+}
+
+
 //mobile options
 
 }
@@ -96,31 +88,32 @@ width: 100%;
   transform: translateY(calc(-100% - var(--top)))
 }
 .nav-items {
+  border-radius: 8px;
   --top: 1rem; //creates css variable
   transition: 0.3 ease transform;
   background-color: var(--deep-dark);
   padding: 2rem;
   width: 90%;
-  max-width: 300px;
-  border-radius: 12px;
+  max-width: 200px;
+  font-size: 2rem;
   position: absolute;
+  color: black;
   right: 1rem;
   top: var(--top); //using css variable
 
-  //nested icon
   .close-nav-icon {
     display: block;
     width: 3rem;
     margin: 0 0 0 auto;
     cursor: pointer;
-    //removes pointer event for nested div items - svg, path etc
     * {
       pointer-events: none;
     }
   }
   li{
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    color: #111111 !important;
   }
 }
 
@@ -238,9 +231,7 @@ export default function NavMenu() {
       <div className='name'>
         <p>Kay Hardeman</p>
         </div>
-        <div className='linkedin'>
-          <AiFillLinkedin />
-        </div>
+
   <div className='mobile-menu-icon'
               onClick={() => SetShowNav(!showNav)}
               role="button"
@@ -248,7 +239,9 @@ export default function NavMenu() {
               tabIndex={0}>
               <MdMenu />
               </div>
-
+              {/* <div className='linkedin'>
+          <FaLinkedin />
+        </div> */}
 
               <ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
               {/* if false show nav items and hide item, if true just return nav tims */}

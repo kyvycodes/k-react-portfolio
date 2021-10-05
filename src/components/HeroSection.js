@@ -17,40 +17,27 @@ font-family: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  //so that child can be absolute
+  position: relative;   //so that child can be absolute
+
 }
 .hero_heading {
-  font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
-  // margin-bottom: -5.5rem;
-  margin-bottom: -33rem;
+  font-size: 4rem;
+  font-family: 'Ephesis Regular';
+  margin-bottom: -45rem;
   position: relative;
-  span {
-    display: inline-block;
-    width: 100%;
-    color: var(--white)
-  }
-  .hero_name {
-    font-size: 6rem;
-    font-family: 'Poppins', sans-serif;
-    color: var(--white)
-  }
+  color: white;
 }
-.door_img {
-  // max-width: 900px;
-  box-shadow: 0 0 2em #e6afb5 ;
-  width: 100%;
-  // height: 100%;
 
-  height: 600px;
-  margin: 0 auto;
-  // border: 2px solid var(--gray-1);
+.door_img {
+  width: 100%;
+  height: 100%;
 }
 
 .hero_info {
-  margin-top: -20rem;
-  color: white;
+  margin-top: -45rem;
+
+
+  // font-size: 20rem;
 }
 
 .hero_interests,
@@ -84,6 +71,7 @@ font-family: 'Poppins', sans-serif;
     width: 16px;
     margin: 0 auto;
     object-fit: contain;
+    color: #e6b396
   }
 }
 .hero_scroll_down {
@@ -92,6 +80,7 @@ font-family: 'Poppins', sans-serif;
 //  }
     img {
     max-height: 70px;
+
   }
 }
 
@@ -125,6 +114,7 @@ font-family: 'Poppins', sans-serif;
   .door_img {
     height: 420px;
   }
+
   //TODO refactor css for media
   .hero_info {
     margin-top: 3rem;
@@ -176,49 +166,20 @@ export default function HeroSection() {
     <HeroStyles>
       <div className='hero_section'>
       <div className='container'>
-        <h1 className='hero_heading'>
-         {/* <span>Hello I'm </span> */}
-          {/* <span className="hero_name">Hi, I'm Kay Hardeman</span> */}
-          </h1>
+        <div className='hero_heading'>
+        <p>Open, inventive, excited, diverse, creator. Welcome to my page ✨ </p>
+        <Button btnLink ='/projects' btnText='View My Work 🌸' outline={false}/>
+          {/* props created by me: btnLink, btnText, outline - can be named whatever and can have multiple datatypes */}
+          </div>
           <div className="door_img">
             <img src={DoorImg} alt=''/>
-          </div>
-          <div className="hero_info">
-            <ParagraphText> <strong>Open, inventive, excited, diverse, creator. Welcome to my page ✨</strong> </ParagraphText>
-            <Button btnLink ='/projects' btnText='View My Work 🌸' outline={false}/>
-          {/* props created by me: btnLink, btnText, outline - can be named whatever and can have multiple datatypes */}
           </div>
       <div className='hero_interests'>
           <div className='hero_interests_indicator'>
             <p>follow</p>
-            <img src={Interests} alt=''/>
+            <img src={ScrollDown} alt=''/>
             </div>
             <div className='hero_interests_text'>
-              <ul>
-                <li>
-                  {/* linkedin example for now */}
-                  <a href="https://linkedin.com/in/kay-hardeman/"
-                  // opens new browser window
-                  target='_blank'
-                  rel="noreferrer">
-                  LI
-                  </a>
-                  </li>
-                  <li>
-                  <a href="https://linkedin.com/in/kay-hardeman/"
-                  target='_blank'
-                  rel="noreferrer">
-                  LI
-                  </a>
-                  </li>
-                  <li>
-                  <a href="https://linkedin.com/in/kay-hardeman/"
-                  target='_blank'
-                  rel="noreferrer">
-                  LI
-                  </a>
-                  </li>
-              </ul>
           </div>
       </div>
       {/* take a look around  */}
