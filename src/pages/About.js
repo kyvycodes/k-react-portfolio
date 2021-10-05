@@ -10,6 +10,7 @@ import resume from '../assets/public/Kay_Hardeman.pdf'
 import DocumentDownload from '../components/DocumentDownload'
 
 const AboutPageStyle = styled.div`
+
   padding: 20rem 0 10rem 0;
   .top_section {
     display: flex;
@@ -23,35 +24,31 @@ const AboutPageStyle = styled.div`
   .right {
     flex: 2;
   }
-  // .right img {
-  //   width: 400px;
-  //   height: 400px;
-  // }
   .right {
     img {
-      border-radius: 50%;
-     box-shadow: 0 0 2em #e6afb5 ;
-
+    border-radius: 50%;
+    box-shadow: 0 0 1em #e6b396;
     }
   }
   .about_subheading {
-    font-size: 2.2rem;
-    margin-bottom: 2rem;
-    span {
-      background-color: var(--deep-dark);
-      padding: 0.5rem;
-      border-radius: 8px;
-    }
+    margin-bottom: 3rem;
+    font-family: 'Ephesis Regular';
+    font-size: 4rem;
+    color: #111111;
+    // #e6b396;;
   }
   .about_heading {
-    font-size: 3.6rem;
+    font-size: 4.4rem;
     margin-bottom: 3rem;
-    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+    // text-shadow: -1px 0 #e6afb5, 0 1px #e6afb5, 1px 0 #e6afb5, 0 -1px #e6afb5;
+    color:#111111;
+    text-transform: uppercase;
   }
   .about_info {
     margin-bottom: 4rem;
     .paragraph {
       max-width: 100%;
+      color: #111111;
     }
   }
 
@@ -92,11 +89,10 @@ export default function About() {
       <div className='container'>
         <div className='top_section'>
           <div className='left'>
-           <p className='about_subheading'>
-              Hi, there
-              <span>Kay Hardeman</span>
-              </p>
                 <h2 className='about_heading'>Software Engineer</h2>
+                <p className='about_subheading'><strong>
+              Hi, there ! </strong>
+              </p>
                   <div className='about_info'>
                     <ParagraphText>
                      Oat cake lollipop wafer cake shortbread. Oat cake pudding cake candy wafer topping. Sweet ice cream liquorice halvah sugar plum apple pie pie jujubes. Cake chocolate bar lemon drops pie marshmallow marzipan apple pie icing.

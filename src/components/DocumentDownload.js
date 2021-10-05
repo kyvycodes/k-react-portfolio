@@ -10,12 +10,12 @@ margin-top: 2rem;
   padding: .7em 2em;
   border-radius: 8px;
   display: inline-block;
-  background-color: white;
-  border: 3px solid #FFC0CB;;
+  background-color: #e6b396;
+  border: 3px solid rgb(238, 214, 186);;
 }
 .download_icon {
   width: fit-content;
-  color: var(--deep-dark);
+  color: rgb(238, 214, 186);
 }
 @media only screen and (max-width: 768px){
   .download{
