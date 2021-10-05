@@ -158,7 +158,7 @@ export default function NavMenu() {
   return(
     <NavMenuStyle>
       <div className='name'>
-        <p>Kay Hardeman</p>
+        <p className='grow'>Kay Hardeman</p>
         </div>
            <div className='mobile-menu-icon'
               onClick={() => SetShowNav(!showNav)}

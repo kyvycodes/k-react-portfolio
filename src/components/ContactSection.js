@@ -1,11 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
+import ContactAnimation from './ContactAnimation'
 import ContactForm from './ContactForm'
 // import ContactInfoItem from './ContactInfoItem'
 
 const ContactSectionStyle = styled.div`
 padding: 10rem 0;
+
+.test {
+  display: flex;
+  justify-content: center;
+  align-items: center
+  // width: 200px;
+  height: 100px;
+}
 
 .contact_section_wrapper::after {
   position: absolute;
@@ -49,11 +58,16 @@ padding: 10rem 0;
 export default function ContactSection() {
   return (
     <ContactSectionStyle>
+
       <div className='container'>
-        <SectionTitle
+        {/* <SectionTitle
         subtitle=''
         title='Get In Touch ✉️'
-        />
+        /> */}
+           <div className='test'>
+      <ContactAnimation/>
+      </div>
+
         <div className='contact_section_wrapper'>
           <ContactForm />
           </div>
