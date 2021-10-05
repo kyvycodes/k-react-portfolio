@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useForm } from '@formspree/react'
+import Confetti from './Confetti'
 
 const FormStyle = styled.div`
 width: 100%;
@@ -67,8 +68,7 @@ export default function ContactForm() {
 
   const [state, handleSubmit] = useForm('mjvjzawz');
 
-
-
+// TODO refactor css for after submit
   if(state.succeeded) {
     return <div> It worked </div>
   }
@@ -111,6 +111,7 @@ export default function ContactForm() {
           disabled={state.submitting}>Send</button>
           {/* <div className="success">Success!</div> */}
         </form>
+        <Confetti/>
     </FormStyle>
   )
 }
