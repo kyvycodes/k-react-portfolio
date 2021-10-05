@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useForm } from '@formspree/react'
-import Confetti from './Confetti'
 
 const FormStyle = styled.div`
 width: 100%;
@@ -44,9 +43,9 @@ button[type='submit']{
   padding: 1rem 6rem;
   border-radius: 8px;
   cursor: pointer;
-  &:hover {
-    background-color: #8e44;
-  }
+  // &:hover {
+  //   background-color: #87685a;
+  // }
 
 }
 
@@ -115,7 +114,6 @@ export default function ContactForm() {
           disabled={state.submitting}>Send</button>
           {/* <div className="success">Success!</div> */}
         </form>
-        <Confetti/>
     </FormStyle>
   )
 }
