@@ -63,62 +63,33 @@ font-family: 'Poppins', sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
+
+  //TODO BUG add space at the top of image or move button down
+
   .hero_section {
-    min-height: 600px;
+    min-height: 750px;
   }
+
+  .mobile_btn {
+    margin-top: 20px;
+  }
+
   .hero_heading {
-    font-size: 1.4rem;
-    margin-bottom: -10rem;
-    // margin-top: 3rem;
+    font-size: 2.5rem;
+    margin-top: 10rem;
   }
+
   .door_img {
-    height: 420px;
+    margin-top: 10px;
+    height: 80vh;
+    width: 100%;
   }
 
-  // //TODO refactor css for media
-  // .hero_info {
-  //   margin-top: 3rem;
-  //   // margin-bottom: -5rem;
-  // }
-  //left side
-  .hero_interests {
-    left: 0px;
-    bottom: -15%;
-    width: 20px;
-    .hero_interests_indicator {
-      width: 20px;
-      gap: 5rem;
-      p {
-        font-size: 1.1rem;
-        padding-right: 10px;
-      }
-      img {
-        max-height: 42px;
-      }
-    }
-  .hero_interests_text {
-    ul {
-      li{
-        a {
-          font: 1.2rem;
-          margin-bottom: 1rem;
-        }
-      }
-    }
-  }
-}
-  //right side
+  .hero_interests,
   .hero_scroll_down {
-    width: 20px;
-    right: 0;
-    gap: 1rem;
-      color: #111111;
-    p {
-      font-size: 1.1rem;
-    }
+    display: none;
   }
 }
-
 `
 
 
@@ -129,12 +100,13 @@ export default function HeroSection() {
       <div className='container'>
         <div className='hero_heading'>
         <p>Open, inventive, excited, diverse, creator. Welcome to my page ✨ </p>
-        <Button btnLink ='/projects' btnText='View My Work 🌸' outline={false}/>
+        <Button className='mobile_btn' btnLink ='/projects' btnText='View My Work 🌸' outline={false}/>
           {/* props created by me: btnLink, btnText, outline - can be named whatever and can have multiple datatypes */}
           </div>
           <div className="door_img">
             <img src={DoorImg} alt=''/>
           </div>
+
       <div className='hero_interests'>
           <div className='hero_interests_indicator'>
             {/* <p>scroll</p> */}
