@@ -3,15 +3,15 @@ import styled from 'styled-components'
 
 const FormStyle = styled.div`
 width: 100%;
-
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
+padding: 2rem;
 
 
 .form_group {
-  width: 600px;
+  width: 500px;
   margin-bottom: 2rem;
   label = font-size: 1.8rem;
 }
@@ -34,18 +34,26 @@ textarea {
 }
 
 button[type='submit']{
-  background-color: var(--gray-1);
-  color: var(--black);
+  background-color: rgb(238, 214, 186);
+  color: #d8af95;
   font-size: 2rem;
   display: inline-block;
   border:none;
-  padding: 1rem 4rem;
+  padding: 1rem 6rem;
   border-radius: 8px;
   cursor: pointer;
 }
 
 // .success {}
 // .error {}
+
+@media only screen and (max-width: 768px){
+    flex-direction: column;
+    max-width: 100%;
+    .form_group {
+      width: 100%;
+    }
+  }
 
 
 `
