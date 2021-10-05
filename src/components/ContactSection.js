@@ -60,8 +60,8 @@ export default function ContactSection() {
       <div className='container'>
 
         <SectionTitle
-        subtitle='Contact'
-        title='Get In Touch'
+        subtitle=''
+        title='Get In Touch ✉️'
         />
         <div className='contact_section_wrapper'>
         <div className='left_info'>

@@ -76,7 +76,7 @@ export default function Footer() {
               I am a footer
           </h1> */}
           <h1 className="name">
-              Kay Hardeman
+              Kay Codes
           </h1>
           <ParagraphText>
           Open, inventive, excited, diverse, creator ✨

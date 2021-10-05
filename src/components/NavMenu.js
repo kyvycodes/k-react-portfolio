@@ -164,75 +164,11 @@ export default function NavMenu() {
   //const [state, setstate function] = useState(initialState)
   const [showNav, SetShowNav] = useState(false)
   return(
-    // <NavMenuStyle>
-      // {/* <div className='name'>
-      //   <p>Kay Hardeman</p>
-      //   </div> */}
-
-    //     <div className='mobile-menu-icon'
-    //           onClick={() => SetShowNav(!showNav)}
-    //           role="button"
-    //           onKeyDown={() => SetShowNav(!showNav)}
-    //           tabIndex={0}>
-    //           <MdMenu />
-    //           </div>
-    //           <ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
-    //           {/* if false show nav items and hide item, if true just return nav tims */}
-    //           <div
-    //           className='close-nav-icon'
-    //           onClick={() => SetShowNav(!showNav)}
-    //           role="button"
-    //           //selects the icon with tab and then allows you to press any key to run
-    //           onKeyDown={() => SetShowNav(!showNav)}
-    //           tabIndex={0}
-    //           >
-    //           <MdClose/>
-    //           </div>
-    //           <li>
-    //           <NavLink
-    //           //to remove navbar after linking to the path
-    //           to="/"exact
-    //           onClick={() => SetShowNav(!showNav)}
-    //           role="button"
-    //           onKeyDown={() => SetShowNav(!showNav)}
-    //           tabIndex={0}
-    //           >Home</NavLink>
-    //           </li>
-    //           <li>
-    //           <NavLink
-    //           to="/projects"
-    //           onClick={() => SetShowNav(!showNav)}
-    //           role="button"
-    //           onKeyDown={() => SetShowNav(!showNav)}
-    //           tabIndex={0}
-    //           >Projects</NavLink>
-    //           </li>
-    //           <li>
-    //           <NavLink
-    //           to="/contact"
-    //           onClick={() => SetShowNav(!showNav)}
-    //           role="button"
-    //           onKeyDown={() => SetShowNav(!showNav)}
-    //           tabIndex={0}>Contact</NavLink>
-    //           </li>
-    //           <li>
-    //           <NavLink
-    //           to="/about"
-    //           onClick={() => SetShowNav(!showNav)}
-    //           role="button"
-    //           onKeyDown={() => SetShowNav(!showNav)}
-    //           tabIndex={0}>About</NavLink>
-    //           </li>
-    //           </ul>
-    // </NavMenuStyle>
-
-
-        <NavMenuStyle>
+    <NavMenuStyle>
       <div className='name'>
         <p>Kay Hardeman</p>
         </div>
-
-  <div className='mobile-menu-icon'
+           <div className='mobile-menu-icon'
               onClick={() => SetShowNav(!showNav)}
               role="button"
               onKeyDown={() => SetShowNav(!showNav)}
