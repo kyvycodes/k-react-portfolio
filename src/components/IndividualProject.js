@@ -54,13 +54,10 @@ const IndividualProjectStyle = styled.div`
 
 export default function IndividualProject({
   img = Office,
-  title = "Project Name",
+  title = "Coming soon",
   link = '',
   github= '',
-  description = "Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies.",
-  // TODO
-  // visit = Project Link
-  // github = link to github
+  description = "Come back soon to see what new projects I'm working for.",
   // demo = if necessary
 }) {
   return (
@@ -75,10 +72,15 @@ export default function IndividualProject({
           </h3>
         </Link>
         <div className='project_links'>
-        <Button
-            btnLink={link}
+
+        {/* <Button
+            btnLink=  { <a href={link}
+            target='_blank'
+            rel="noreferrer"/>}
             btnText={`visit`}
-            />
+            > */}
+
+          {/* </Button> */}
         <Button
             btnLink={github}
             btnText={`github`}

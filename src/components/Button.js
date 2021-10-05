@@ -8,6 +8,7 @@ import styled from 'styled-components'
 //   }
 // background-color: ${(props) =>
 //   props.outline ? 'transperant' : 'var(--gray-1)'};
+
 const ButtonStyle = styled.div`
 margin-top: 2rem;
 .button {
@@ -33,20 +34,9 @@ margin-top: 2rem;
 }
 `
 
-// export default function Button(props) {
-//   console.log('btn', props)
-//   return (
-//     <ButtonStyle outline={props.outline}>
-//       <BrowserRouter>
-//         <Link className='button' to={props.btnLink}>{props.btnText}</Link>
-//       </BrowserRouter>
-//     </ButtonStyle>
-//   )
-// }
-
-
 export default function Button({
-  btnLink = 'testtt', //default values
+   //default values
+  btnLink = 'error, come back soon',
   outline = true,
   btnText = 'Test' }) {
   console.log('btn', btnLink, outline, btnText )

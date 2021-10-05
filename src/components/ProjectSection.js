@@ -97,6 +97,8 @@ export default function ProjectSection() {
                   title={project.name}
                   img={project.img}
                   description={project.desc}
+                  link={project.link}
+                  github={project.github}
                   />
                 </SwiperSlide>
               )
