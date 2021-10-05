@@ -16,11 +16,10 @@ const AboutSectionStyle = styled.div`
    text-align: left;
  }
  .about_section_right img{
-   max-width: 500px;
-   max-height: 400px;
+   max-width: 600px;
+   max-height: 500px;
    height: auto;
    width: auto;
-  //  filter: sepia(100%);
    float: right;
  }
 
@@ -33,7 +32,7 @@ const AboutSectionStyle = styled.div`
   text-align: left;
  }
  .paragraph {
-   margin-top: 2rem;
+   margin-top: 1rem;
    margin-left: 0;
  }
  .about_section_buttons {
@@ -43,6 +42,7 @@ const AboutSectionStyle = styled.div`
    margin-top: 1rem;
    gap: 2rem;
  }
+
 //similar to ipad size
  @media only screen and (max-width: 950px){
   .about_section_left {
@@ -100,7 +100,7 @@ export default function AboutSection() {
           <div className="about_section_buttons">
             <Button
             btnLink='/projects'
-            btnText='My Work💖'
+            btnText='My Work'
             outline={false}/>
             <Button
             btnLink='/about'

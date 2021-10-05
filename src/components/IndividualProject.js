@@ -2,14 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Office from '../assets/images/office.jpg'
+import Button from './Button'
 
 const IndividualProjectStyle = styled.div`
 .individual_project_img {
   width: 100%;
-  // height: 400px;
-  height: 100%;
+  height: 560px;
   overflow: hidden;
-  // border-radius: 12px;
+  border-radius: 12px;
   display: inline-block;
   box-shadow: 0 0 2em rgb(238, 214, 186);
   // border: 1px solid rgb(238, 214, 186);
@@ -17,6 +17,14 @@ const IndividualProjectStyle = styled.div`
     height: 100%;
   }
 }
+
+.project_links {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-between;
+  margin: 3px;
+}
+
 .individual_project_info {
   margin-top: 1rem;
   background-color: var(--deep-dark);
@@ -25,12 +33,15 @@ const IndividualProjectStyle = styled.div`
 }
 .individual_project_title {
   font-size: 2.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 .individual_project_description {
   font-size: 1.6rem;
   font-family: 'WorkSans Regular';
   marin-top: 1rem;
 }
+
 @media only screen and (max-width: 768px) {
   .individual_project_img {
     height: 350px;
@@ -44,6 +55,8 @@ const IndividualProjectStyle = styled.div`
 export default function IndividualProject({
   img = Office,
   title = "Project Name",
+  link = '',
+  github= '',
   description = "Bonbon cotton candy cupcake cake macaroon. Tootsie roll chocolate cake chocolate muffin liquorice dessert wafer gummies.",
   // TODO
   // visit = Project Link
@@ -61,6 +74,16 @@ export default function IndividualProject({
           <h3 className='individual_project_title'>{title}
           </h3>
         </Link>
+        <div className='project_links'>
+        <Button
+            btnLink={link}
+            btnText={`visit`}
+            />
+        <Button
+            btnLink={github}
+            btnText={`github`}
+            />
+        </div>
         <p className='individual_project_description'>{description}</p>
       </div>
     </IndividualProjectStyle>

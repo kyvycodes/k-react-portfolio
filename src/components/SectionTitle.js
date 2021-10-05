@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SectionTitleStyle = styled.div`
-  text-align: center; //default styling
+  text-align: center;
   p {
     font-family: "WorkSans Regular";
     font-size: 1.5rem;
@@ -10,8 +10,8 @@ const SectionTitleStyle = styled.div`
   h2 {
     font-family: 'Poppins SemiBold';
     font-size: 6rem;
-    // margin-top: 0.5rem;
     text-transform: uppercase;
+    color: #111
   }
 
   @media only screen and (max-width: 768px){

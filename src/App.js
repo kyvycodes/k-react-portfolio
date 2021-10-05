@@ -5,19 +5,12 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-import HeroSection from './components/HeroSection';
 import Footer from './components/Footer';
-import styled from 'styled-components';
 
-const AppStyle = styled.div`
-
-// background-color: #f7f5f2
-`
 
 export default function App() {
   return (
-    <AppStyle>
-    {/* <Hero Section/> */}
+    <>
     <Router>
       <NavMenu/>
       <Switch>
@@ -36,6 +29,6 @@ export default function App() {
         </Switch>
         <Footer />
     </Router>
-    </AppStyle>
+    </>
   );
 }
