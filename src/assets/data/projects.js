@@ -1,13 +1,9 @@
 import { v4 as uuidv4 } from 'uuid';
-// import ProjectImg from '../images/projectImg.png';
-// import UTrackerImg from '../images/utracker.jpg';
-// import GreenCtgImg from '../images/greenctg.jpg';
-// import CoinTrackerImg from '../images/cointracker.jpg';
-// import CavinImg from '../images/cavinimg.jpg';
 import MagicImg from '../images/magic.jpg'
 import AffectsOfaHue from '../images/affectsofahue.png'
 import EventShare from '../images/eventshare.png'
 import Plantagram from '../images/plantagram.png'
+import Portfolio from '../images/kaysportfolio.png'
 
 
 const projects = [
@@ -72,7 +68,7 @@ const projects = [
     name: "Kay's Portfolio",
     desc:
       'Cake fruitcake tart wafer wafer wafer. Shortbread gummies jelly-o gingerbread carrot cake. Jujubes cake dragée topping pie bonbon danish donut chocolate bar.',
-    img: MagicImg,
+    img:Portfolio,
      // link:
     github: 'https://github.com/kyvycodes/k-react-portfolio'
     // features: []

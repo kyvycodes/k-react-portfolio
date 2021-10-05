@@ -2,6 +2,7 @@ import React from 'react'
 import ParagraphText from '../components/ParagraphText'
 import Button from '../components/Button'
 import AboutImg from '../assets/images/kyvz-avatar.png'
+// import Cube from '../components/Cube'
 import styled from 'styled-components'
 import AboutInfoItem from '../components/AboutInfoItem'
 import ContactBanner from'../components/ContactBanner'
@@ -92,7 +93,8 @@ export default function About() {
         <div className='top_section'>
           <div className='left'>
            <p className='about_subheading'>
-              Hi, I am <span>Kay Hardeman</span>
+              Hi, there
+              <span>Kay Hardeman</span>
               </p>
                 <h2 className='about_heading'>Software Engineer</h2>
                   <div className='about_info'>
@@ -104,14 +106,11 @@ export default function About() {
                       Dessert chupa chups wafer tiramisu chocolate cake bonbon cake. Gingerbread donut caramels sesame snaps oat cake liquorice dragée liquorice pie. Sweet lemon drops wafer biscuit candy canes sesame snaps. Topping pastry bonbon chocolate cake jujubes. Marzipan topping danish sesame snaps wafer cookie dragée dragée.
                     </ParagraphText>
                  </div>
-                {/* <Button btnText='Download Resume' btnLink='#' outline={false} to={resume}  target="_blank" download /> */}
-
-                {/* #TODO - download button or style download  */}
-                {/* <a href={resume} download="Kay_Hardeman.pdf"> Download Here </a> */}
                 <DocumentDownload/>
               </div>
               <div className='right'>
                 <img src={AboutImg} alt="Bio Picture"/>
+                {/* <Cube /> */}
           </div>
          </div>
          <div className='about_info_items'>
@@ -119,9 +118,6 @@ export default function About() {
               <h1 className='about_info_heading'>My Skills</h1>
               <AboutInfoItem
               title="front end"
-              // items={[
-              //   "Fullstack", "Knowledge House"
-              // ]}
               />
               <AboutInfoItem
               title="back end"

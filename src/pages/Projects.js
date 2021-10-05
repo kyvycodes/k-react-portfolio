@@ -13,7 +13,7 @@ const ProjectsStyles = styled.div`
   padding: 10rem 0;
   .projects_all_items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 5rem;
     margin-top: 5rem;
   }
@@ -96,6 +96,8 @@ export default function Projects() {
                 title={item.name}
                 description={item.desc}
                 img={item.img}
+                link={item.link}
+                github={item.github}
                 />
             ))}
         </div>

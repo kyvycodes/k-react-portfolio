@@ -100,6 +100,8 @@ export default function ProjectSection() {
                   link={project.link}
                   github={project.github}
                   />
+
+
                 </SwiperSlide>
               )
             })}

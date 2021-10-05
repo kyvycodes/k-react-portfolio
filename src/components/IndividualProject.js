@@ -72,19 +72,12 @@ export default function IndividualProject({
           </h3>
         </Link>
         <div className='project_links'>
-
-        {/* <Button
-            btnLink=  { <a href={link}
-            target='_blank'
-            rel="noreferrer"/>}
-            btnText={`visit`}
-            > */}
-
-          {/* </Button> */}
-        <Button
-            btnLink={github}
-            btnText={`github`}
-            />
+        <button>
+        <a href={link} target='_blank' rel='noreferrer'>Visit</a>
+        </button>
+        <button>
+        <a href={github} target='_blank' rel='noreferrer'>Github</a>
+        </button>
         </div>
         <p className='individual_project_description'>{description}</p>
       </div>

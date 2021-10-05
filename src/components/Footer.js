@@ -98,11 +98,6 @@ export default function Footer() {
             },
             {
               type:'link',
-              title:'Projects',
-              path:'/projects'
-            },
-            {
-              type:'link',
               title:'Contact',
               path:'/contact'
             }
@@ -113,10 +108,6 @@ export default function Footer() {
         <FooterColumn
         heading='Contact Info'
         links={[
-          {
-            title: 'number',
-            path: 'tel:'
-          },
           {
             title: 'gmail',
             path: 'mailto:kyv.hardeman@gmail.com'
@@ -142,13 +133,11 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          {/* <ParagraphText> */}
           <p>
           © 2021 - Kay Hardeman | Designed By{' '}
           <a target="_blank" rel="noreferrer" href="http://webcifar.com">
               web cifar
             </a>{' '}
-          {/* </ParagraphText> */}
           </p>
         </div>
       </div>

@@ -5,7 +5,6 @@ import SectionTitle from './SectionTitle'
 import Collage from '../assets/images/projectcollage.png'
 import styled from 'styled-components'
 import Cube from './Cube'
-// import Magic from '../assets/images/magic.jpg'
 
 const AboutSectionStyle = styled.div`
  padding; 10rem 0;
@@ -110,7 +109,6 @@ export default function AboutSection() {
         <div className="about_section_right">
           <img src={Collage} alt=""/>
           {/* <Cube/> */}
-          {/* <img src={Magic} alt=""/> */}
         </div>
       </div>
     </AboutSectionStyle>
