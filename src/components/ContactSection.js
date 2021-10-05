@@ -9,40 +9,24 @@ import ContactForm from './ContactForm'
 const ContactSectionStyle = styled.div`
 padding: 10rem 0;
 
-.contact_section_wrapper {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
-  // min-height: 100vh;
-  // display: flex;
-  // gap: 5rem;
-  // margin-top: 7rem;
-  // justify-content: center;
-  // position: relative;
-  // width: 50%;
-  // max-width: 500px;
-  // border-radius: 12px;
+.contact_section_wrapper::after,
+.contact_section_wrapper::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 60%;
+  background-color: #e6afb5;
+  top: 75%;
+  transform: translate(-50%, -50%);
 }
-// .contact_section_wrapper::after {
-//   position: absolute;
-//   content: '';
-//   width: 2px;
-//   height: 50%;
-//   background-color: rgb(238, 214, 186);
-//   left: 50%;
-//   top: 30%;
-//   transform: translate(-50%, -50%);
-// }
-// .left_info {
-//   width: 100%;
-//   max-width: 500px;
-// }
-// .right_form {
-//   width: 50%;
-//   max-width: 500px;
-//   border-radius: 12px;
-// }
+
+.contact_section_wrapper::after {
+  left: 20%;
+}
+.contact_section_wrapper::before{
+  right: 20%;
+}
+
 
 
 @media only screen and (max-width: 768px){
