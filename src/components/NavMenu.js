@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdMenu, MdClose} from 'react-icons/md'
-import { FaLinkedin } from 'react-icons/fa'
+import { AiOutlineLinkedin } from 'react-icons/ai'
 
 
 const NavMenuStyle = styled.div`
@@ -36,20 +36,6 @@ font-family: 'WorkSans Regular';
   pointer-events: none;
 }
 
-// .linkedin {
-//   position: absolute;
-//   left: 1rem;
-//   top: 1rem;
-//   width: 4rem;
-//   cursor: pointer;
-//   outline: none;
-// }
-
-// ul{
-//   max-width: 1200px;
-//   margin: 0 auto;
-//   width: 90%;
-//
   li {
     display: inline-block;
     // display: flex;
@@ -59,30 +45,27 @@ font-family: 'WorkSans Regular';
     &:hover {
       background-color: var(--deep-dark);
     }
-//   }
 
-
-  a {
-    display: inline-block;
-    padding: 1rem 2rem;
-    font-size: 2rem;
-    color: #FFC0CB;
-    outline: none;
-  }
-  .active {
-    color: #FFC0CB;
-    opacity: .4;
-  }
+//TODO -update active
+  // a {
+  //   display: inline-block;
+  //   padding: 1rem 2rem;
+  //   font-size: 2rem;
+  //   color: #FFC0CB;
+  //   outline: none;
+  // }
+  // .active {
+  //   color: #FFC0CB;
+  //   opacity: .4;
+  // }
 }
 
-li:active {
-  color: #111111;
-}
-
-
-//mobile options
+// li:active {
+//   color: #111111;
+// }
 
 }
+
 
 .hide-item {
   transform: translateY(calc(-100% - var(--top)))
@@ -115,6 +98,15 @@ li:active {
     margin-bottom: 2rem;
     color: #111111 !important;
   }
+}
+
+.linkedin {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 3.5rem;
+  cursor: pointer;
+  outline: none;
 }
 
 
@@ -175,9 +167,13 @@ export default function NavMenu() {
               tabIndex={0}>
               <MdMenu />
               </div>
-              {/* <div className='linkedin'>
-          <FaLinkedin />
-        </div> */}
+              <div className='linkedin'>
+                <a href='https://www.linkedin.com/in/kay-hardeman/' target='_blank' rel='noreferrer'>
+              <AiOutlineLinkedin
+              color='#87685a'/>
+              </a>
+              </div>
+
 
               <ul className={!showNav ? 'nav-items hide-item' : 'nav-items'}>
               {/* if false show nav items and hide item, if true just return nav tims */}

@@ -1,6 +1,4 @@
 import React from 'react'
-import { MdEmail } from 'react-icons/md'
-import { BiHappyBeaming } from 'react-icons/bi'
 import styled from 'styled-components'
 import SectionTitle from '../components/SectionTitle'
 import ContactForm from './ContactForm'

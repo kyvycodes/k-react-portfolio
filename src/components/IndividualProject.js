@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Office from '../assets/images/office.jpg'
-import Button from './Button'
 
 const IndividualProjectStyle = styled.div`
 .individual_project_img {
@@ -24,7 +23,6 @@ const IndividualProjectStyle = styled.div`
 }
 .project_links button{
   background-color: rgb(238, 214, 186);
-  color: #d8af95;
   font-size: 1rem;
   border:none;
   padding: 1rem 3rem;
@@ -42,11 +40,13 @@ const IndividualProjectStyle = styled.div`
   font-size: 2.2rem;
   margin-bottom: 1rem;
   text-align: center;
+  // font-weight: bold;
+  text-transform: uppercase;
 }
 .individual_project_description {
   font-size: 1.6rem;
   font-family: 'WorkSans Regular';
-  marin-top: 1rem;
+  marin-top: 1.5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -56,16 +56,13 @@ const IndividualProjectStyle = styled.div`
 }
 
 `
-// TODO
-// popup responsiveness when project is highlighted
-
+// TODO - popup responsiveness when project is highlighted or individual project component
 export default function IndividualProject({
   img = Office,
   title = "Coming soon",
   link = '',
   github= '',
   description = "Come back soon to see what new projects I'm working for.",
-  // demo = if necessary
 }) {
   return (
     <IndividualProjectStyle>
@@ -80,10 +77,10 @@ export default function IndividualProject({
         </Link>
         <div className='project_links'>
         <button>
-        <a href={link} target='_blank' rel='noreferrer'>Visit</a>
+        <a href={link} target='_blank' rel='noreferrer'>VISIT</a>
         </button>
         <button>
-        <a href={github} target='_blank' rel='noreferrer'>Github</a>
+        <a href={github} target='_blank' rel='noreferrer'>GITHUB</a>
         </button>
         </div>
         <p className='individual_project_description'>{description}</p>
