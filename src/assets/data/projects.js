@@ -17,10 +17,11 @@ const projects = [
     desc:
       'Planning an event, no matter how big or small can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. The app can be used for any get-together, family reunions, parties, among other activities.',
     img: EventShare,
-    // github:
-    // deployed: https://event-share-app.herokuapp.com/
+    link: 'https://event-share-app.herokuapp.com/',
+    github: 'https://github.com/kyvycodes/event-share-app'
     // demo:
-    //
+
+
     // features: [
       // Javascript
 // 'React',
@@ -42,6 +43,8 @@ const projects = [
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
     img: Plantagram,
+    // link:
+    github: 'https://github.com/kyvycodes/event-share-app'
     // features: ['User can view a list of options',
 // 'User can choose a single plant',
 // 'User can filter for inventory of a specific season',
@@ -51,8 +54,6 @@ const projects = [
 // 'When the user is not logged in they may still alter shopping cart using local storage',
 // 'User my check out logged in or as a guest',
 // 'Admin can view each users information]'
-    // github:
-    // deployed:
     // demo:
   },
   {
@@ -61,26 +62,30 @@ const projects = [
     desc:
       'Caramels donut candy canes gummi bears pie sesame snaps marshmallow chocolate cake. Marzipan cotton candy bonbon chocolate bonbon pudding sweet muffin. Gummies chocolate chupa chups croissant toffee carrot cake candy liquorice danish.',
     img: AffectsOfaHue,
+    link: 'https://kyvycodes.github.io/affectsofahue/index.html'
      // github:
-    // deployed: https://kyvycodes.github.io/affectsofahue/index.html
+
     // demo:
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    name: "Kay's Portfolio",
     desc:
       'Cake fruitcake tart wafer wafer wafer. Shortbread gummies jelly-o gingerbread carrot cake. Jujubes cake dragée topping pie bonbon danish donut chocolate bar.',
     img: MagicImg,
+     // link:
+    github: 'https://github.com/kyvycodes/k-react-portfolio'
     // features: []
   },
-  {
-    id: uuidv4(),
-    name: 'Tracking Soft',
-    desc:
-      'Pudding bonbon lemon drops fruitcake topping pastry marshmallow pudding cupcake. Icing icing candy croissant gummies pastry. Danish oat cake marzipan topping jujubes macaroon biscuit candy canes.',
-    img: MagicImg,
+  // {
+    // id: uuidv4(),
+    // name:
+    // desc:
+    // img:
+    // link:
+    // github:
     // features: []
-  },
+  // },
 ];
 
 export default projects;
