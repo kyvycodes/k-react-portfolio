@@ -5,17 +5,23 @@ import { FiDownload } from "react-icons/fi"
 
 const DocumentDownloadStyle = styled.div`
 margin-top: 2rem;
+
+
+// BUG issue overriding button text color - color: #d8af95;
 .download {
+  background-color: rgb(238, 214, 186);
+  color: #d8af95;
   font-size: 2rem;
+  display: inline-block;
+  border:none;
   padding: .7em 2em;
   border-radius: 8px;
-  display: inline-block;
-  background-color: #e6b396;
-  border: 3px solid rgb(238, 214, 186);;
+  cursor: pointer;
 }
+
 .download_icon {
   width: fit-content;
-  color: rgb(238, 214, 186);
+  color: #d8af95;
 }
 @media only screen and (max-width: 768px){
   .download{

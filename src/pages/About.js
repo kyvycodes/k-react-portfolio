@@ -35,13 +35,12 @@ const AboutPageStyle = styled.div`
     font-family: 'Ephesis Regular';
     font-size: 4rem;
     color: #111111;
-    // #e6b396;;
   }
   .about_heading {
     font-size: 4.4rem;
     margin-bottom: 3rem;
-    // text-shadow: -1px 0 #e6afb5, 0 1px #e6afb5, 1px 0 #e6afb5, 0 -1px #e6afb5;
-    color:#111111;
+    // text-shadow: -.5px 0 #111111, 0 .5px #111111, .5px 0 #111111, 0 -.5px #111111;
+    color: #d8af95;
     text-transform: uppercase;
   }
   .about_info {

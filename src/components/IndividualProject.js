@@ -12,17 +12,24 @@ const IndividualProjectStyle = styled.div`
   border-radius: 12px;
   display: inline-block;
   box-shadow: 0 0 2em rgb(238, 214, 186);
-  // border: 1px solid rgb(238, 214, 186);
   img{
     height: 100%;
   }
 }
-
 .project_links {
   display: flex;
   gap: 4rem;
   justify-content: space-between;
   margin: 3px;
+}
+.project_links button{
+  background-color: rgb(238, 214, 186);
+  color: #d8af95;
+  font-size: 1rem;
+  border:none;
+  padding: 1rem 3rem;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .individual_project_info {
