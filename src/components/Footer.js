@@ -84,7 +84,7 @@ export default function Footer() {
         </div>
         <div className='footer_col2'>
           <FooterColumn
-          heading='Important Links'
+          heading='Take a look'
           // #TODO change home link to top of page jump
           links ={[
             {
@@ -109,7 +109,7 @@ export default function Footer() {
         heading='Contact Info'
         links={[
           {
-            title: 'gmail',
+            title: 'Gmail',
             path: 'mailto:kyv.hardeman@gmail.com'
           },
           {

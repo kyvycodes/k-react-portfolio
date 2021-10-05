@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-// #TODO contact section
-
 const FormStyle = styled.div`
 width: 100%;
 
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+
 .form_group {
-  width: 100%;
+  width: 600px;
   margin-bottom: 2rem;
   label = font-size: 1.8rem;
 }
@@ -38,7 +42,6 @@ button[type='submit']{
   padding: 1rem 4rem;
   border-radius: 8px;
   cursor: pointer;
-
 }
 
 // .success {}
@@ -87,7 +90,7 @@ export default function ContactForm() {
              </label>
           </div>
           <button type="submit">Send</button>
-          <div className="success">Success!</div>
+          {/* <div className="success">Success!</div> */}
         </form>
     </FormStyle>
   )

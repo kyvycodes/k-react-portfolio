@@ -17,7 +17,6 @@ const projects = [
     github: 'https://github.com/kyvycodes/event-share-app'
     // demo:
 
-
     // features: [
 // 'Javascript',
 // 'React',
