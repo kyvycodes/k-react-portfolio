@@ -17,13 +17,14 @@ margin-top: 2rem;
   display: inline-block;
   //TODO come back look up correct () syntax for arrow functions
   color: ${props =>
-    props.outline ? ' #e6b396)' : '#250307'
+    props.outline ? ' #e6b396)' : '#111111;'
     };
    background-color: ${(props) =>
     props.outline ? 'transparent' : ' #e6b396'
     };
-  opacity: 0.5;;
-  border: 2px solid  #e6b396
+  // opacity: 0.5;;
+  border: 2px solid #d8af95
+}
 }
 @media only screen and (max-width: 768px){
   .button{
