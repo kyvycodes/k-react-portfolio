@@ -44,6 +44,10 @@ button[type='submit']{
   padding: 1rem 6rem;
   border-radius: 8px;
   cursor: pointer;
+  &:hover {
+    background-color: #8e44;
+  }
+
 }
 
 // .success {}
