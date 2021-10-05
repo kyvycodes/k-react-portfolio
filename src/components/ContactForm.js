@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { useForm } from '@formspree/react'
 
 const FormStyle = styled.div`
 width: 100%;
@@ -64,9 +65,17 @@ export default function ContactForm() {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
 
+  const [state, handleSubmit] = useForm('mjvjzawz');
+
+
+
+  if(state.succeeded) {
+    return <div> It worked </div>
+  }
+
   return (
     <FormStyle>
-       <form>
+       <form onSubmit={handleSubmit}>
           <div className='form_group'>
             <label htmlFor='name'>Your Name
             <input
@@ -97,7 +106,9 @@ export default function ContactForm() {
             onChange={e => setMessage(e.target.value)}/>
              </label>
           </div>
-          <button type="submit">Send</button>
+          <button
+          type="submit"
+          disabled={state.submitting}>Send</button>
           {/* <div className="success">Success!</div> */}
         </form>
     </FormStyle>
