@@ -47,8 +47,8 @@ const projects = [
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
     img: Plantagram,
-    // link:
-    // github:
+    link: 'https://plantagram.herokuapp.com/',
+    github: 'https://github.com/Plantagram-App/Plantagram'
   },
   {
     id: uuidv4(),
