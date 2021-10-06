@@ -8,7 +8,6 @@ To run: npm start
 
 Currently fixing:
 
-- links taking you to bottom of page
 - contact banner link not working
 - success vs non success for email button (does it send the email)
 - if github or visit link is not present

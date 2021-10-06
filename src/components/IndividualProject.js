@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Office from '../assets/images/office.jpg'
+import NoLink from '../assets/images/nolink.png'
 
 const IndividualProjectStyle = styled.div`
 .individual_project_img {
@@ -60,8 +61,9 @@ const IndividualProjectStyle = styled.div`
 export default function IndividualProject({
   img = Office,
   title = "Coming soon",
-  link = '',
-  github= '',
+  // TODO update
+  link = NoLink,
+  github= NoLink,
   description = "Come back soon to see what new projects I'm working for.",
 }) {
   return (

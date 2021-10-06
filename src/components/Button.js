@@ -1,13 +1,7 @@
 import React from 'react'
-import { Link, BrowserRouter } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
-  //if the outline is true the background color will be transparent otherwise it will be gray
-//  background-color: ${(props) =>
-//   props.outline ? 'transparent' : 'var(--gray-1)'
-//   }
-// background-color: ${(props) =>
-//   props.outline ? 'transperant' : 'var(--gray-1)'};
 
 const ButtonStyle = styled.div`
 margin-top: 2rem;
@@ -16,7 +10,8 @@ margin-top: 2rem;
   padding: .7em 2em;
   border-radius: 8px;
   display: inline-block;
-  //TODO come back look up correct () syntax for arrow functions
+
+  //if the outline is true the background color will be transparent otherwise it will be beige
   color: ${props =>
     props.outline ? ' #e6b396)' : '#111111;'
     };
@@ -44,9 +39,7 @@ export default function Button({
     <ButtonStyle
     className='button_wrapper'
     outline={outline}>
-      <BrowserRouter>
         <Link className='button' to={btnLink}>{btnText}</Link>
-      </BrowserRouter>
     </ButtonStyle>
   )
 }

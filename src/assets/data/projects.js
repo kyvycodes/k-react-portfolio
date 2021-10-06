@@ -38,7 +38,8 @@ const projects = [
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
     img: Plantagram,
-    github: 'https://github.com/kyvycodes/event-share-app'
+    // link:
+    // github:
   },
   {
     id: uuidv4(),
@@ -46,7 +47,8 @@ const projects = [
     desc:
       'Caramels donut candy canes gummi bears pie sesame snaps marshmallow chocolate cake. Marzipan cotton candy bonbon chocolate bonbon pudding sweet muffin. Gummies chocolate chupa chups croissant toffee carrot cake candy liquorice danish.',
     img: AffectsOfaHue,
-    link: 'https://kyvycodes.github.io/affectsofahue/index.html'
+    link: 'https://kyvycodes.github.io/affectsofahue/index.html',
+    // github:
   },
   {
     id: uuidv4(),
@@ -54,7 +56,8 @@ const projects = [
     desc:
       'Cake fruitcake tart wafer wafer wafer. Shortbread gummies jelly-o gingerbread carrot cake. Jujubes cake dragée topping pie bonbon danish donut chocolate bar.',
     img:Portfolio,
-    github: 'https://github.com/kyvycodes/k-react-portfolio'
+    link: 'kaycodes.io',
+    github: 'https://github.com/kyvycodes/kay-portfolio-react'
   },
   // { next project
     // id: uuidv4(),
