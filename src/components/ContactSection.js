@@ -7,6 +7,7 @@ import ContactForm from './ContactForm'
 
 const ContactSectionStyle = styled.div`
 padding: 10rem 0;
+background-color: #FFFFFF;
 
 // BUG overlay when deployed
 // .contact_section_wrapper::after {
