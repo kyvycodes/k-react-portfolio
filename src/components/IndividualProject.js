@@ -21,6 +21,7 @@ const IndividualProjectStyle = styled.div`
   gap: 4rem;
   justify-content: space-between;
   margin: 3px;
+  margin-bottom: 5px;
 }
 .project_links button{
   background-color: rgb(238, 214, 186);

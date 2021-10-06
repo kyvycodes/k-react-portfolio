@@ -17,3 +17,7 @@ Things to add:
 
 - Loading page
 - refactor confetti
+
+TODO
+
+- margin portfolio description

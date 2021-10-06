@@ -34,6 +34,15 @@ const projects = [
   },
   {
     id: uuidv4(),
+    name: "Kay's Portfolio",
+    desc:
+      'You are here ! Welcome to my portfolio, a clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
+    img: Portfolio,
+    link: 'kaycodes.io',
+    github: 'https://github.com/kyvycodes/kay-portfolio-react'
+  },
+  {
+    id: uuidv4(),
     name: 'Plantagram',
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
@@ -45,20 +54,13 @@ const projects = [
     id: uuidv4(),
     name: 'Affects of a Hue',
     desc:
-      'Color has a big impact on how your brain sees the world. Did you know if you’re looking at sea green or lemon yellow, your brain feels a different emotion to each? Find out more about what colors can do for you.',
+      'Did you know if you’re looking at sea green or lemon yellow, your brain feels a different emotion to each? Some researchers agree that our brain innately connects colors with feelings, while others believe that the feelings we associate with each color are learned. Find out more.',
     img: AffectsOfaHue,
     link: 'https://kyvycodes.github.io/affectsofahue/index.html',
+    // technologies:'HTML, CSS, Flexbox'
     // github:
   },
-  {
-    id: uuidv4(),
-    name: "Kay's Portfolio",
-    desc:
-      'Cake fruitcake tart wafer wafer wafer. Shortbread gummies jelly-o gingerbread carrot cake. Jujubes cake dragée topping pie bonbon danish donut chocolate bar.',
-    img:Portfolio,
-    link: 'kaycodes.io',
-    github: 'https://github.com/kyvycodes/kay-portfolio-react'
-  },
+
   // { next project
     // id: uuidv4(),
     // name:
