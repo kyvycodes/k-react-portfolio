@@ -8,26 +8,27 @@ import ContactForm from './ContactForm'
 const ContactSectionStyle = styled.div`
 padding: 10rem 0;
 
-.contact_section_wrapper::after {
-  position: absolute;
-  content: '';
-  width: 2.5px;
-  height: 40%;
-  background-color: #e6afb5;
-  left: 20%;
-  top: 75%;
-  transform: translate(-50%, -50%);
-}
-.contact_section_wrapper::before {
-  position: absolute;
-  content: '';
-  width: 2.5px;
-  background-color: #e6afb5;
-  height: 40%;
-  right: 20%;
-  top: 75%;
-  transform: translate(-50%, -50%);
-}
+// BUG overlay when deployed
+// .contact_section_wrapper::after {
+//   position: absolute;
+//   content: '';
+//   width: 2.5px;
+//   height: 40%;
+//   background-color: #e6afb5;
+//   left: 20%;
+//   top: 75%;
+//   transform: translate(-50%, -50%);
+// }
+// .contact_section_wrapper::before {
+//   position: absolute;
+//   content: '';
+//   width: 2.5px;
+//   background-color: #e6afb5;
+//   height: 40%;
+//   right: 20%;
+//   top: 75%;
+//   transform: translate(-50%, -50%);
+// }
 
 // BUG footer off ipad pro
  @media only screen and (max-width: 1050px){
@@ -55,7 +56,7 @@ export default function ContactSection() {
         subtitle=''
         title='Get In Touch ✉️'
         />
-        <div className='contact_section_wrapper'>
+        <div>
           <ContactForm />
           </div>
         </div>
