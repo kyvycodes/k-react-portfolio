@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Footer from './components/Footer';
+import TopScroll from './components/TopScroll';
 
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
     <>
     <Router>
       <NavMenu/>
+      <TopScroll/>
       <Switch>
       <Route path='/about'>
         <About/>
