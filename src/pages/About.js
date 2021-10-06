@@ -94,11 +94,13 @@ export default function About() {
               </p>
                   <div className='about_info'>
                     <ParagraphText>
-                     Oat cake lollipop wafer cake shortbread. Oat cake pudding cake candy wafer topping. Sweet ice cream liquorice halvah sugar plum apple pie pie jujubes. Cake chocolate bar lemon drops pie marshmallow marzipan apple pie icing.
+                    “Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.”
+                   {/*  */}
                      <br/> <br/>
-                      Bonbon danish carrot cake powder ice cream. Sesame snaps chocolate cake jujubes biscuit sweet dessert cake. Chupa chups danish sweet roll donut powder pudding. Tootsie roll chocolate bar dessert shortbread caramels shortbread jelly-o gummi bears macaroon. Cupcake chocolate cake jelly fruitcake marzipan cookie soufflé pastry icing.
+                     - Marie Curie, Two-Time Nobel Prize Winner
+                   {/*  */}
                       <br/> <br/>
-                      Dessert chupa chups wafer tiramisu chocolate cake bonbon cake. Gingerbread donut caramels sesame snaps oat cake liquorice dragée liquorice pie. Sweet lemon drops wafer biscuit candy canes sesame snaps. Topping pastry bonbon chocolate cake jujubes. Marzipan topping danish sesame snaps wafer cookie dragée dragée.
+
                     </ParagraphText>
                  </div>
                 <DocumentDownload/>
@@ -112,27 +114,27 @@ export default function About() {
             <div className='about_info_item'>
               <h1 className='about_info_heading'>My Skills</h1>
               <AboutInfoItem
-              title="front end"
+              title="Comfortable:"
               />
               <AboutInfoItem
-              title="back end"
+              title="Proficient:"
               items={[
-                "Fullstack", "Knowledge House"
+                "JavaScript, Express, Git, Node.js, React, Sequelize, CSS, HTML"
               ]}
               />
             </div>
             <div className='about_info_item'>
               <h1 className='about_info_heading'>Coding Education</h1>
-              <AboutInfoItem
+              {/* <AboutInfoItem
               title="High-School"
               items={[
                 "Fullstack", "Knowledge House"
               ]}
-              />
+              /> */}
               <AboutInfoItem
-              title="Coding Bootcamp"
+              title=""
               items={[
-                "Fullstack", "Knowledge House"
+                "Fullstack Academy", "Project Code vol. 2", "Project Code vol. 1"
               ]}
               />
             </div>
