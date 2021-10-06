@@ -6,12 +6,10 @@
 
 To run: npm start
 
-Currently fixing:
+<!--
+BUG
 
-- contact banner link not working
-- success vs non success for email button (does it send the email)
 - if github or visit link is not present
-- projects link
 
 Things to add:
 
@@ -20,4 +18,14 @@ Things to add:
 
 TODO
 
+- success vs non success for email button (does it send the email)
 - margin portfolio description
+- nav bar 'name' animation or link to home
+- Loading page
+- formspree  email name
+- .submitted not overriding
+
+stretch
+- refactor confetti
+
+-->

@@ -49,8 +49,8 @@ button[type='submit']{
 
 }
 
-// .success {}
-// .error {}
+.submitted {}
+
 
 @media only screen and (max-width: 768px){
     flex-direction: column;
@@ -73,11 +73,10 @@ export default function ContactForm() {
 
 // TODO refactor css for after submit
   if(state.succeeded) {
-    return <div> It worked </div>
+    return <div className='submitted'> Thank You, I will be getting back to you shortly 📫</div>
   }
-
   return (
-    <FormStyle>
+  <FormStyle>
        <form onSubmit={handleSubmit}>
           <div className='form_group'>
             <label htmlFor='name'>Your Name
