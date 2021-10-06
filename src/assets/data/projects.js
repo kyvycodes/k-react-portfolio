@@ -57,8 +57,9 @@ const projects = [
       'Did you know if you’re looking at sea green or lemon yellow, your brain feels a different emotion to each? Some researchers agree that our brain innately connects colors with feelings, while others believe that the feelings we associate with each color are learned. Find out more.',
     img: AffectsOfaHue,
     link: 'https://kyvycodes.github.io/affectsofahue/index.html',
+    github:'https://github.com/kyvycodes/affectsofahue'
     // technologies:'HTML, CSS, Flexbox'
-    // github:
+
   },
 
   // { next project
