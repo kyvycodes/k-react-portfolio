@@ -100,7 +100,6 @@ export default function About() {
                      - Marie Curie, Two-Time Nobel Prize Winner
                    {/*  */}
                       <br/> <br/>
-
                     </ParagraphText>
                  </div>
                 <DocumentDownload/>
@@ -113,13 +112,23 @@ export default function About() {
          <div className='about_info_items'>
             <div className='about_info_item'>
               <h1 className='about_info_heading'>My Skills</h1>
-              <AboutInfoItem
-              title="Comfortable:"
-              />
+
               <AboutInfoItem
               title="Proficient:"
               items={[
-                "JavaScript, Express, Git, Node.js, React, Sequelize, CSS, HTML"
+                "JavaScript", 'Express', 'Git', 'Node.js', 'React', 'CSS', 'HTML'
+              ]}
+              />
+                <AboutInfoItem
+              title="Comfortable:"
+              items={[
+                "Material-UI", "Redux ", "Mocha", 'Sequelize', 'SQL', 'PostgreSQL'
+              ]}
+              />
+              <AboutInfoItem
+              title="Familiar:"
+              items={[
+                'Heroku', 'Netflify', 'Jasmine', 'TDD (Mocha, Chai, Jasmine)'
               ]}
               />
             </div>
