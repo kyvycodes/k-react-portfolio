@@ -15,6 +15,7 @@ Things to add:
 
 TODO
 
+- animation or hover for project
 - success vs non success for email button (does it send the email)
 - margin portfolio description
 - nav bar 'name' animation or link to home

@@ -122,7 +122,7 @@ export default function About() {
                 <AboutInfoItem
               title="Comfortable:"
               items={[
-                "Figma', Material-UI", "Redux ", "Mocha", 'Sequelize', 'SQL', 'PostgreSQL'
+                'Figma', "Material-UI", "Redux ", "Mocha", 'Sequelize', 'SQL', 'PostgreSQL'
               ]}
               />
               <AboutInfoItem
