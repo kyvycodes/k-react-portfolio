@@ -13,6 +13,9 @@ const SectionTitleStyle = styled.div`
     text-transform: uppercase;
     color: #111
   }
+  .sub {
+    color: #87685a;
+  }
 
   @media only screen and (max-width: 768px){
     p{
@@ -30,8 +33,8 @@ export default function SectionTitle({
   title = 'This is the Title'
 }) {
   return (
-    <SectionTitleStyle className='section_title'>
-      <p>{subtitle} </p>
+    <SectionTitleStyle >
+      <p className='sub'>{subtitle} </p>
       <h2>{title} </h2>
     </SectionTitleStyle>
   )

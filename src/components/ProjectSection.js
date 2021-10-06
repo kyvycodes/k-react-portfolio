@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
+import { Link } from 'react-router-dom';
 
 SwiperCore.use([Navigation])
 
@@ -65,7 +66,8 @@ export default function ProjectSection() {
   return (
     <ProjectSectionStyle>
       <div className='container'>
-        <SectionTitle title="Projects" subtitle="Recent work"/>
+
+        <Link to='/projects'><SectionTitle title="Projects" subtitle="Recent work"/></Link>
         <div className='project_all_items'>
           <Swiper
           spaceBetween={30}

@@ -45,7 +45,7 @@ const projects = [
     id: uuidv4(),
     name: 'Affects of a Hue',
     desc:
-      'Caramels donut candy canes gummi bears pie sesame snaps marshmallow chocolate cake. Marzipan cotton candy bonbon chocolate bonbon pudding sweet muffin. Gummies chocolate chupa chups croissant toffee carrot cake candy liquorice danish.',
+      'Color has a big impact on how your brain sees the world. Did you know if you’re looking at sea green or lemon yellow, your brain feels a different emotion to each? Find out more about what colors can do for you.',
     img: AffectsOfaHue,
     link: 'https://kyvycodes.github.io/affectsofahue/index.html',
     // github:
