@@ -122,7 +122,7 @@ export default function About() {
                 <AboutInfoItem
               title="Comfortable:"
               items={[
-                "Material-UI", "Redux ", "Mocha", 'Sequelize', 'SQL', 'PostgreSQL'
+                "Figma', Material-UI", "Redux ", "Mocha", 'Sequelize', 'SQL', 'PostgreSQL'
               ]}
               />
               <AboutInfoItem
@@ -133,17 +133,23 @@ export default function About() {
               />
             </div>
             <div className='about_info_item'>
-              <h1 className='about_info_heading'>Coding Education</h1>
-              {/* <AboutInfoItem
-              title="High-School"
-              items={[
-                "Fullstack", "Knowledge House"
-              ]}
-              /> */}
+              <h1 className='about_info_heading'>Coding Instruction</h1>
               <AboutInfoItem
-              title=""
+              title="2021"
               items={[
-                "Fullstack Academy", "Project Code vol. 2", "Project Code vol. 1"
+                "UX Microcredential - (current)",
+              ]}
+              />
+              <AboutInfoItem
+              title="2020"
+              items={[
+                "Fullstack Academy",
+              ]}
+              />
+               <AboutInfoItem
+              title="2019"
+              items={[
+                'TTP', "Project Code vol. 2", "Project Code vol. 1"
               ]}
               />
             </div>
