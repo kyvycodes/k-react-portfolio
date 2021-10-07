@@ -34,15 +34,6 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: "Kay's Portfolio",
-    desc:
-      'A showcase of work that provides detail about myself as Software Developer. A clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
-    img: Portfolio,
-    link: 'https://kaycodes.io/',
-    github: 'https://github.com/kyvycodes/kay-portfolio-react'
-  },
-  {
-    id: uuidv4(),
     name: 'Plantagram',
     desc:
       'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including seasons and living conditions while searching for the new perfect addition to their home.',
@@ -59,9 +50,16 @@ const projects = [
     link: 'https://kyvycodes.github.io/affectsofahue/index.html',
     github:'https://github.com/kyvycodes/affectsofahue'
     // technologies:'HTML, CSS, Flexbox'
-
   },
-
+  {
+    id: uuidv4(),
+    name: "Kay's Portfolio",
+    desc:
+      'A showcase of work that provides detail about myself as Software Developer. A clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
+    img: Portfolio,
+    link: 'https://kaycodes.io/',
+    github: 'https://github.com/kyvycodes/kay-portfolio-react'
+  }
   // { next project
     // id: uuidv4(),
     // name:
