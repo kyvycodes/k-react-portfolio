@@ -55,7 +55,7 @@ const projects = [
     id: uuidv4(),
     name: "Kay's Portfolio",
     desc:
-      'A showcase of work that provides detail about myself as Software Developer. A clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
+      'You are here! Welcome to a showcase of work that provides detail about myself as Software Developer. A clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
     img: Portfolio,
     link: 'https://kaycodes.io/',
     github: 'https://github.com/kyvycodes/kay-portfolio-react'
