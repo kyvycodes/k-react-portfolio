@@ -1,10 +1,35 @@
-# React Portfolio website
+#                     React Portfolio website
 
-![](src/assets/images/door.jpg)
+</br>
 
-To run: npm start
+<!-- ![readme](https://user-images.githubusercontent.com/49247755/136299351-791d7393-4356-4fd9-9aad-2435ed636bac.png) -->
+
+<img width="832" alt="Screen Shot 2021-10-06 at 9 30 56 PM" src="https://user-images.githubusercontent.com/49247755/136306106-b8af97d8-a867-4b3e-a33c-ba35949c387a.png">
+
+<p align="center"><strong>
+A showcase of work that provides detail about myself as Software Developer.
+  </strong>
+</p>
+
+Features: 
+- React
+- React Router
+- React Router Dom
+- React Transition
+- Swiper
+
+<p align="center">
+  <strong>https://kaycodes.io/</strong>
+</p>
+  
+
+---
+
 
 <!--
+
+to run:  npm start 
+
 BUG
 - if github or visit link is not present
 
