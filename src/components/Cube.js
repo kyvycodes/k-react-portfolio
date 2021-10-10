@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-// BUG not animation not working. Back up - https://dev.to/samwatts98/how-to-easily-animate-your-react-components-on-click-with-css-keyframes-26mg
+// BUG resizing
 
 const CubeAnimation = styled.div`
 

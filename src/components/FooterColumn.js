@@ -45,7 +45,6 @@ export default function FooterColumns({
                 // if not create an anchor tag
                 <a href={item.path} target='_blank' rel='noreferrer'>{item.title}</a>
               )}
-              {/*target='_blank' because it is an external like, leak no referrer information */}
             </li>
             ))
         }

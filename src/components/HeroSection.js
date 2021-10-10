@@ -115,7 +115,6 @@ export default function HeroSection() {
             <div className='hero_interests_text'>
           </div>
       </div>
-      {/* take a look around  */}
       <div className="hero_scroll_down">
       <p></p>
       <img src={ScrollDown} alt=''/>

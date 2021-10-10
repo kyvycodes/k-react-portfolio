@@ -62,7 +62,6 @@ const IndividualProjectStyle = styled.div`
 export default function IndividualProject({
   img = Office,
   title = "Coming soon",
-  // TODO update
   link = NoLink,
   github= NoLink,
   description = "Come back soon to see what new projects I'm working for.",

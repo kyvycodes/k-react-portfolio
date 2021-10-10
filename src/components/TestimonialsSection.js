@@ -4,7 +4,6 @@ import SectionTitle from './SectionTitle'
 import ParagraphText from './ParagraphText'
 import styled from 'styled-components'
 import { MdArrowBack, MdArrowForward } from 'react-icons/md'
-import { IoArrowForwardCircle } from 'react-icons/io5'
 import testimonials from '../assets/data/testimonials'
 
 
@@ -80,11 +79,10 @@ text-align: center;
 `
 
 export default function TestimonialsSection() {
-  //mange index with useState
-  // useState(0) will be the first item in the array of testimonial data
+  //manage index with useState
+  //useState(0) will be the first item in the array of testimonial data
   const [activeIndex, setActiveIndex] = useState(0)
   const activeSlide = testimonials[activeIndex]
-  // console.log('active', activeSlide)
 
   //handles previous and next item changes
   function handlePrevious(){
@@ -114,7 +112,6 @@ export default function TestimonialsSection() {
       <div className='testimonial_wrapper'>
       {/* http://reactcommunity.org/react-transition-group/switch-transition */}
       <SwitchTransition>
-      {/* http://reactcommunity.org/react-transition-group/css-transition */}
         <CSSTransition
         //decides when transition happens
         key={activeSlide.id}
@@ -154,7 +151,6 @@ export default function TestimonialsSection() {
         tabIndex={0}
         onKeyDown={handleNext}>
           <MdArrowForward />
-          {/* <IoArrowForwardCircle/> */}
         </div>
       </div>
       </div>
