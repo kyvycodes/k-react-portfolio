@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { MdSearch } from "react-icons/md";
 import IndividualProject from '../components/IndividualProject'
 import ProjectInfo from '../assets/data/projects'
+import ReactCardFlip from 'react-card-flip';
 
 
  // repeat() function allows you to repeat columns as many times as needed.
@@ -90,7 +91,8 @@ export default function Projects() {
         </div>
 
           <div className='projects_all_items'>
-            {projectData.map(item => (
+          {projectData.map(item => (
+            // <Link to={`/projects/${item.id}`}>
                 <IndividualProject
                 key={item.id}
                 title={item.name}
@@ -99,6 +101,7 @@ export default function Projects() {
                 link={item.link}
                 github={item.github}
                 />
+                // </Link>
             ))}
         </div>
       </div>

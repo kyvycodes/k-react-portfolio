@@ -116,7 +116,7 @@ export default function About() {
               <AboutInfoItem
               title="Proficient:"
               items={[
-                "JavaScript", 'Express', 'Git', 'Node.js', 'React', 'CSS', 'HTML'
+                "JavaScript", 'Express', 'Git', 'Node.js', 'React', 'HTML', 'RESTful API'
               ]}
               />
                 <AboutInfoItem

@@ -66,6 +66,7 @@ export default function IndividualProject({
   link = NoLink,
   github= NoLink,
   description = "Come back soon to see what new projects I'm working for.",
+  // features = [];
 }) {
   return (
     <IndividualProjectStyle>
