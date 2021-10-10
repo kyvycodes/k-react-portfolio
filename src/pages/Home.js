@@ -5,7 +5,6 @@ import ProjectSection from '../components/ProjectSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactBanner from '../components/ContactBanner';
 
-//functional component
 export default function Home() {
   return (
     <div>
