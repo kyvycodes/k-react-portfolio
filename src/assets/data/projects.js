@@ -11,7 +11,7 @@ const projects = [
     id: uuidv4(),
     name: 'Event Share',
     desc:
-      `Planning an event, no matter how big or small can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. The app can be used for any get-together, family reunions, parties, among other activities.`,
+      `Planning an event, no matter how big or small, can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. Great for any get-togethers, family reunions, parties, and all of your event needs.`,
     img: EventShare,
     link: 'https://event-share-app.herokuapp.com/',
     github: 'https://github.com/kyvycodes/event-share-app',
