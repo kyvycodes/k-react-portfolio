@@ -11,7 +11,7 @@ const projects = [
     id: uuidv4(),
     name: 'Event Share',
     desc:
-      `Planning an event, no matter how big or small, can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. Great for any get-togethers, family reunions, parties, and all of your event needs.`,
+      `Planning an event, no matter how big or small, can become tedious. Our app facilitates the organization of an event by letting a user manage the logistics with input from guests. Great for get-togethers, family reunions, parties, and all of your event needs.`,
     img: EventShare,
     link: 'https://event-share-app.herokuapp.com/',
     github: 'https://github.com/kyvycodes/event-share-app',
@@ -36,7 +36,7 @@ const projects = [
     id: uuidv4(),
     name: 'Plantagram',
     desc:
-      'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including season and living condition while searching for the new perfect addition to their home.',
+      'An E-Commerce site that allows guests and users to purchase house plants. Guests can browse subcategories including season and living conditions while searching for the new perfect addition to their home.',
     img: Plantagram,
     link: 'https://plantagram.herokuapp.com/',
     github: 'https://github.com/Plantagram-App/Plantagram'
@@ -45,7 +45,7 @@ const projects = [
     id: uuidv4(),
     name: 'Affects of a Hue',
     desc:
-      'Did you know if you’re looking at sea green or lemon yellow, your brain feels a different emotion to each? Some researchers agree that our brain innately connects colors with feelings, while others believe that the feelings we associate with each color are learned. Find out more.',
+      'Did you know that if you’re looking at sea green or lemon yellow, your brain feels a different emotion to each? Some researchers agree that our brain innately connects colors with feelings, while others believe that the feelings we associate with each color are learned. Find out more.',
     img: AffectsOfaHue,
     link: 'https://kyvycodes.github.io/affectsofahue/index.html',
     github:'https://github.com/kyvycodes/affectsofahue'
@@ -55,7 +55,7 @@ const projects = [
     id: uuidv4(),
     name: "Kay's Portfolio",
     desc:
-      'You are here! Welcome to a showcase of work that provides detail about myself as Software Developer. A clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
+      'You are here! Welcome to a showcase of work that provides detail about myself as a Software Developer. A clean design with full responsiveness. Want to chat? Be sure to fill out the contact form.',
     img: Portfolio,
     link: 'https://kaycodes.io/',
     github: 'https://github.com/kyvycodes/kay-portfolio-react'
