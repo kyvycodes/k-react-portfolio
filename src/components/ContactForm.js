@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { useForm } from '@formspree/react'
+import { ValidationError, useForm } from '@formspree/react'
 
 const FormStyle = styled.div`
 width: 100%;
@@ -49,7 +49,9 @@ button[type='submit']{
 
 }
 
-.submitted {}
+.submitted {
+  text-align: center;
+}
 
 
 @media only screen and (max-width: 768px){
@@ -65,9 +67,9 @@ button[type='submit']{
 
 
 export default function ContactForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  // const [name, setName] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [message, setMessage] = useState('');
 
   const [state, handleSubmit] = useForm('mjvjzawz');
 
@@ -79,35 +81,34 @@ export default function ContactForm() {
   <FormStyle>
        <form onSubmit={handleSubmit}>
           <div className='form_group'>
-            <label htmlFor='name'>Your Name
+            <label htmlFor='name'>Your Name </label>
             <input
             type="text"
             id='name'
-            name='name'
-            value={name}
-            onChange={e => setName(e.target.value)}/>
-            </label>
-          </div>
-          <div className='form_group'>
-            <label htmlFor='email'>Your Email
+            name='name'/>
+            {/* field={name}
+            // onChange={e => setName(e.target.field)}/> */}
+            <label htmlFor='email'>Your Email </label>
             <input
-            type="text"
+            type="email"
             id='email'
-            email='email'
-            value={email}
-            onChange={e => setEmail(e.target.value)}/>
-            </label>
-          </div>
-          <div className='form_group'>
-            <label htmlFor='message'>Your Message
+            name='email'
+            />
+            <ValidationError field="email" prefix="Email" errors={state.errors} />
+
+            <label htmlFor='message'>Your Message  </label>
             <textarea
-            type="text"
             id='message'
             message='message'
-            value={message}
-            onChange={e => setMessage(e.target.value)}/>
-             </label>
+            />
+
           </div>
+          {/* <div className='form_group'>
+
+          </div>
+          <div className='form_group'>
+
+          </div> */}
           <button
           type="submit"
           disabled={state.submitting}>Send</button>
