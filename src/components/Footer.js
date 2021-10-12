@@ -131,16 +131,6 @@ export default function Footer() {
         />
         </div>
       </div>
-      <div className="copyright">
-        <div className="container">
-          <p>
-          © 2021 - Kay Hardeman | Designed By{' '}
-          <a target="_blank" rel="noreferrer" href="http://webcifar.com">
-              web cifar
-            </a>{' '}
-          </p>
-        </div>
-      </div>
     </FooterStyles>
   )
 }
