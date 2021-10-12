@@ -11,7 +11,7 @@ li {
   margin-bottom: 1rem;
 }
 a {
-  font-size; 1.8rem;
+  font-size; 2.2rem !important; //override font
 }
 
 `
@@ -49,6 +49,7 @@ export default function FooterColumns({
             ))
         }
       </ul>
+      {/* #TODO refactor footer info */}
     </FooterColumnStyle>
   )
 }
