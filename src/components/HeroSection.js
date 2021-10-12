@@ -24,8 +24,17 @@ font-family: 'Poppins', sans-serif;
   font-size: 4.5rem;
   font-family: 'Ephesis Regular';
   margin-bottom: -45rem;
+
   position: relative;
   color: white;
+}
+
+.shadow {
+  box-shadow: 0 0 1em #e6afb5;
+}
+
+.shrink {
+  font-size: 2.8rem
 }
 
 .door_img {
@@ -61,6 +70,11 @@ font-family: 'Poppins', sans-serif;
     color: #e6b396
   }
 }
+
+.mobile_btn {
+  margin-top: 50px;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -99,7 +113,8 @@ export default function HeroSection() {
       <div className='hero_section'>
       <div className='container'>
         <div className='hero_heading'>
-        <p>Open, inventive, engaging, diverse, creator. Welcome ! ✨ </p>
+        <p className='shadow'>Open, inventive, engaging, diverse, creator. Welcome <span className='shrink'>✨</span> </p>
+
         <Button className='mobile_btn' btnLink ='/projects' btnText='View My Work' outline={false}/>
           {/* props created by me: btnLink, btnText, outline - can be named whatever and can have multiple datatypes */}
           </div>
