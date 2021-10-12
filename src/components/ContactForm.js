@@ -50,7 +50,7 @@ button[type='submit']{
 }
 
 .submitted {
-  text-align: center;
+  text-align: center !important;
 }
 
 
@@ -67,10 +67,6 @@ button[type='submit']{
 
 
 export default function ContactForm() {
-  // const [name, setName] = useState('');
-  // const [email, setEmail] = useState('');
-  // const [message, setMessage] = useState('');
-
   const [state, handleSubmit] = useForm('mjvjzawz');
 
 // TODO refactor css for after submit
@@ -86,8 +82,6 @@ export default function ContactForm() {
             type="text"
             id='name'
             name='name'/>
-            {/* field={name}
-            // onChange={e => setName(e.target.field)}/> */}
             <label htmlFor='email'>Your Email </label>
             <input
             type="email"
@@ -95,20 +89,13 @@ export default function ContactForm() {
             name='email'
             />
             <ValidationError field="email" prefix="Email" errors={state.errors} />
-
             <label htmlFor='message'>Your Message  </label>
             <textarea
             id='message'
+            name='message'
             message='message'
             />
-
           </div>
-          {/* <div className='form_group'>
-
-          </div>
-          <div className='form_group'>
-
-          </div> */}
           <button
           type="submit"
           disabled={state.submitting}>Send</button>
