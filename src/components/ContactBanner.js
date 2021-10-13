@@ -29,7 +29,7 @@ export default function ContactBanner() {
       <div className='container'>
       <div className='contact_banner_wrapper'>
       <ParagraphText>
-        Reach out and Say Hello
+        Reach out and say Hello
       </ParagraphText>
       <h3 className='contact_banner_heading'>
         Lets work together 💻
