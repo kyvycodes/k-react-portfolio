@@ -19,6 +19,7 @@ padding: 2rem;
 
 .increase {
   font-size: 2rem;
+  font-style: italic;
 }
 
 input,
@@ -31,7 +32,7 @@ textarea {
   outline: none;
   border: none;
   border-radius: 8px;
-  margin-top: 1rem;
+  margin: 1rem;
 }
 textarea {
   min-height: 250px;
@@ -81,20 +82,20 @@ export default function ContactForm() {
   <FormStyle>
        <form onSubmit={handleSubmit}>
           <div className='form_group'>
-            <label htmlFor='name'className="increase">Your Name </label>
+            <label htmlFor='name'className="increase">Name</label>
             <input
             type="text"
             id='name'
             name='name'
             />
-            <label htmlFor='email' className="increase">Your Email </label>
+            <label htmlFor='email' className="increase">Email</label>
             <input
             type="email"
             id='email'
             name='email'
             />
             <ValidationError field="email" prefix="Email" errors={state.errors} />
-            <label htmlFor='message' className="increase">Your Message  </label>
+            <label htmlFor='message' className="increase">Message</label>
             <textarea
             id='message'
             name='message'
