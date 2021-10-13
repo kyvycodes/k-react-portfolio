@@ -41,6 +41,13 @@ const AboutSectionStyle = styled.div`
    margin-top: 1rem;
    gap: 2rem;
  }
+ .centered {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 1.3em;
+ }
 
 //similar to ipad size
  @media only screen and (max-width: 950px){
@@ -80,7 +87,7 @@ const AboutSectionStyle = styled.div`
        width: 100%;
        text-align: center;
      }
-   }
+   }😅
  }
 `
 
@@ -92,10 +99,11 @@ export default function AboutSection() {
         <div className="about_section_left">
           <SectionTitle
           subtitle=''
-          title="About me 👩🏽‍💻"
+          title="About me"
           />
-          <ParagraphText>I am dedicated to fine-tuning my skills through mentorship from more seasoned developers and tirelessly working toward self-improvement by learning all I can on my own. I became an engineer to help shape the global tech landscape and build a bridge between the world I came from and the innovations I believe our future world will require.
-          </ParagraphText>
+          {/* TODO add icon to title */}
+          <p className='centered'>I am dedicated to fine-tuning my skills through mentorship from more seasoned developers and tirelessly working toward self-improvement by learning all I can on my own. I became an engineer to help shape the global tech landscape and build a bridge between the world I came from and the innovations I believe our future world will require.
+          </p>
           <div className="about_section_buttons">
             <Button
             btnLink='/projects'

@@ -21,7 +21,7 @@ font-family: 'Poppins', sans-serif;
 
 }
 .hero_heading {
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   font-family: 'Ephesis Regular';
   margin-bottom: -45rem;
 
@@ -85,7 +85,7 @@ font-family: 'Poppins', sans-serif;
   }
 
   .mobile_btn {
-    margin-top: 20px;
+    margin-top: 20px;👩🏽‍💻
   }
 
   .hero_heading {
@@ -113,7 +113,7 @@ export default function HeroSection() {
       <div className='hero_section'>
       <div className='container'>
         <div className='hero_heading'>
-        <p className='shadow'>Open, inventive, engaging, diverse, creator. Welcome <span className='shrink'>✨</span> </p>
+        <p className='shadow'>Open, inventive, engaging, diverse creator. Welcome <span className='shrink'>✨</span> </p>
 
         <Button className='mobile_btn' btnLink ='/projects' btnText='View My Work' outline={false}/>
           {/* props created by me: btnLink, btnText, outline - can be named whatever and can have multiple datatypes */}

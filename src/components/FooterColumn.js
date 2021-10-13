@@ -4,16 +4,17 @@ import styled from 'styled-components'
 
 const FooterColumnStyle = styled.div`
 .heading{
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 li {
   margin-bottom: 1rem;
 }
-a {
-  font-size; 2.2rem !important; //override font
-}
 
+.increase {
+  font-size: 1.3rem;
+  // color: #87685a !important;
+}
 `
 
 export default function FooterColumns({
@@ -34,7 +35,7 @@ export default function FooterColumns({
   return (
     <FooterColumnStyle>
       <h1 className='heading'>{heading}</h1>
-      <ul>
+      <ul className='increase'>
         {
           links.map((item, index) => (
             <li key={index}>

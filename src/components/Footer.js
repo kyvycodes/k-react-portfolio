@@ -10,7 +10,6 @@ const FooterStyles = styled.div`
   .name {
     font-family: 'Ephesis Regular' ;
     font-size: 6rem;
-    // color: #111111;
     text-align: left;
   }
 
@@ -41,6 +40,11 @@ const FooterStyles = styled.div`
       margin-right: 0;
     }
 
+  }
+
+  .footer_text {
+    font-size: 1.8rem;
+    line-height: 1.3em;
   }
 
 
@@ -78,9 +82,9 @@ export default function Footer() {
           <h1 className="name">
               Kay Hardeman
           </h1>
-          <ParagraphText>
-          Open, inventive, excited, diverse, creator ✨
-          </ParagraphText>
+
+         <p className='footer_text'> Open, inventive, engaging, diverse creator ✨
+          </p>
         </div>
         <div className='footer_col2'>
           <FooterColumn
