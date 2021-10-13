@@ -37,10 +37,11 @@ const AboutSectionStyle = styled.div`
  .about_section_buttons {
    display: flex;
    align-items: center;
-   justify-content: flex-start;
+   justify-content: center;
    margin-top: 1rem;
    gap: 2rem;
  }
+
  .centered {
     text-align: center;
     max-width: 500px;
@@ -108,7 +109,8 @@ export default function AboutSection() {
             <Button
             btnLink='/projects'
             btnText='My Work'
-            outline={false}/>
+            outline={false}
+            />
             <Button
             btnLink='/about'
             btnText='Learn More About Me'/>
