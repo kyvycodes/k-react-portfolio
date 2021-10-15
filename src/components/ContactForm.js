@@ -82,24 +82,27 @@ export default function ContactForm() {
   <FormStyle>
        <form onSubmit={handleSubmit}>
           <div className='form_group'>
-            <label htmlFor='name'className="increase">Name</label>
+            {/* <label htmlFor='name'className="increase">Name</label> */}
             <input
             type="text"
             id='name'
             name='name'
+            placeholder="Name"
             />
-            <label htmlFor='email' className="increase">Email</label>
+            {/* <label htmlFor='email' className="increase">Email</label> */}
             <input
             type="email"
             id='email'
             name='email'
+            placeholder="Email"
             />
             <ValidationError field="email" prefix="Email" errors={state.errors} />
-            <label htmlFor='message' className="increase">Message</label>
+            {/* <label htmlFor='message' className="increase">Message</label> */}
             <textarea
             id='message'
             name='message'
             message='message'
+            placeholder="Message"
             />
           </div>
           <button
