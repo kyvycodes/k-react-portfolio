@@ -27,6 +27,7 @@ font-family: 'Poppins', sans-serif;
 
   position: relative;
   color: white;
+
 }
 
 .shadow {

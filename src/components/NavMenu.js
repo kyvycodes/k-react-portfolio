@@ -15,7 +15,7 @@ font-family: 'WorkSans Regular';
 
 .name {
   font-family: 'Ephesis Regular';
-  font-size: 3rem;
+  font-size: 4.3rem;
   color: #111111;
   text-align: center;
   padding:  1rem;
@@ -35,6 +35,8 @@ font-family: 'WorkSans Regular';
   * {
   pointer-events: none;
 }
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
 
   li {
     display: inline-block;
