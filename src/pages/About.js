@@ -137,7 +137,7 @@ export default function About() {
               <AboutInfoItem
               title="2021"
               items={[
-                "UX Microcredential - (current)",
+                "UX Microcredential - current",
               ]}
               />
               <AboutInfoItem
